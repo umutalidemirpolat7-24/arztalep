@@ -136,7 +136,7 @@
 <!-- Bento Grid Products -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Product 1: AirPods -->
-<div class="group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer">
+<div class="group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" onclick="document.getElementById('product-detail-modal').classList.remove('hidden')">
 <div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Airpods Pro 2 on a clean minimal pedestal with soft studio lighting and luxury aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4jmTspd5oFVc2SUXCB4uKGMLAcWjHdNKN2Gff4mEqmIisfWRIVzA-R0hYEPKea87LoHp7SGwxx_yvg5VgEswpL3KwTfPxdaXBk7esQJ319zY1mwFwO0qgWqJtUoxXmT7AcKCLX7mNDxuRbGuA5XxRRzVDcKba-SpsaJxqZMXRNlIkwH26xYVhNZTsGtjeILhnRXDU_utupoHzrpAEjWSfegJgikyU744xqLz__8ePPkKRVWb2FaSrVPK0V0e9pF4lEx6oGdYK-II"/>
 <div class="absolute top-3 left-3 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary">SON 1 KİŞİ</div>
@@ -273,9 +273,9 @@
 </div>
 </div>
 <!-- Product Detail Overlay (Simulated State) -->
-<div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm">
+<div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="product-detail-modal">
 <div class="bg-white w-full max-w-4xl rounded-[2.5rem] overflow-hidden relative shadow-2xl animate-in fade-in zoom-in duration-300">
-<button class="absolute top-6 right-6 z-10 w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-surface-container transition-all">
+<button class="absolute top-6 right-6 z-10 w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-surface-container transition-all" id="close-modal">
 <span class="material-symbols-outlined">close</span>
 </button>
 <div class="flex flex-col md:flex-row h-full">
@@ -387,4 +387,15 @@
 <span class="text-[10px] font-bold">Profil</span>
 </a>
 </nav>
-</body></html>
+<script>
+  document.getElementById('close-modal').addEventListener('click', function() {
+    document.getElementById('product-detail-modal').classList.add('hidden');
+  });
+
+  // Optional: Close modal when clicking outside the content area
+  document.getElementById('product-detail-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      this.classList.add('hidden');
+    }
+  });
+</script></body></html>
