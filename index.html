@@ -7,7 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -116,13 +115,13 @@
 <!-- Hero Section -->
 <section class="mb-12 relative overflow-hidden rounded-3xl bg-surface-container-low min-h-[400px] flex items-center">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-20" data-alt="luxury minimal product staging with warm lighting and soft shadows on a beige background with dynamic geometric shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpJQP9Bts3OcL2em4HogiRVCxkF9WLlTtddO8jUq2FvWCWiF-OlWZFi1fVVHuXyEF1dcpqRrYOzdeifZkYKBUTDU156co82JFDzRKhL_zIAjrAM0MhqWIQgtt7og5yqW3iOtwphlTNLqWJPMyXTTTgvOVyeqNDjdrDzuQri0D3rzwtDkw6Xn3maOd5Kpg55FNhxlRw64ekBHG3QKS7OvnLXStxu_a6Hwbajk3UNRjrWlvWf1L3T9zW591oqgTaYKP55TDnFGnk_-0"/>
+<img alt="luxury minimal product staging" class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpJQP9Bts3OcL2em4HogiRVCxkF9WLlTtddO8jUq2FvWCWiF-OlWZFi1fVVHuXyEF1dcpqRrYOzdeifZkYKBUTDU156co82JFDzRKhL_zIAjrAM0MhqWIQgtt7og5yqW3iOtwphlTNLqWJPMyXTTTgvOVyeqNDjdrDzuQri0D3rzwtDkw6Xn3maOd5Kpg55FNhxlRw64ekBHG3QKS7OvnLXStxu_a6Hwbajk3UNRjrWlvWf1L3T9zW591oqgTaYKP55TDnFGnk_-0"/>
 </div>
 <div class="relative z-10 px-8 md:px-16 w-full lg:w-1/2">
 <span class="inline-block bg-primary text-on-primary px-4 py-1 rounded-full text-sm font-bold mb-4 animate-pulse">🔥 FIRSAT ALARMI</span>
 <h1 class="text-4xl md:text-6xl font-headline font-extrabold leading-tight mb-4 text-on-surface">3 KİŞİ OLURSA FİYAT DÜŞÜYOR 🔥</h1>
 <p class="text-xl md:text-2xl text-on-surface-variant mb-8 font-body">Arkadaşlarınla birlikte al, hayalindeki lükse daha ucuza sahip ol.</p>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-[0_12px_40px_rgba(175,39,0,0.25)] transition-all active:scale-95">HEMEN KATIL</button>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-[0_12px_40_px_rgba(175,39,0,0.25)] transition-all active:scale-95">HEMEN KATIL</button>
 </div>
 </section>
 <!-- Product Grid Header -->
@@ -136,9 +135,9 @@
 <!-- Bento Grid Products -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Product 1: AirPods -->
-<div class="group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" onclick="document.getElementById('product-detail-modal').classList.remove('hidden')">
+<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="1" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuC4jmTspd5oFVc2SUXCB4uKGMLAcWjHdNKN2Gff4mEqmIisfWRIVzA-R0hYEPKea87LoHp7SGwxx_yvg5VgEswpL3KwTfPxdaXBk7esQJ319zY1mwFwO0qgWqJtUoxXmT7AcKCLX7mNDxuRbGuA5XxRRzVDcKba-SpsaJxqZMXRNlIkwH26xYVhNZTsGtjeILhnRXDU_utupoHzrpAEjWSfegJgikyU744xqLz__8ePPkKRVWb2FaSrVPK0V0e9pF4lEx6oGdYK-II" data-name="Apple AirPods Pro 2. Nesil" data-old-price="7.500 TL" data-participants="2" data-price="6.200 TL" data-tier1-label="2 Kişi" data-tier1-price="7.000 TL" data-tier2-label="3 Kişi (TAM)" data-tier2-price="6.200 TL" data-time="04:22:15" data-total="3" data-urgency="Sadece 1 kişi daha katılırsa fiyat düşecek!">
 <div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Airpods Pro 2 on a clean minimal pedestal with soft studio lighting and luxury aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4jmTspd5oFVc2SUXCB4uKGMLAcWjHdNKN2Gff4mEqmIisfWRIVzA-R0hYEPKea87LoHp7SGwxx_yvg5VgEswpL3KwTfPxdaXBk7esQJ319zY1mwFwO0qgWqJtUoxXmT7AcKCLX7mNDxuRbGuA5XxRRzVDcKba-SpsaJxqZMXRNlIkwH26xYVhNZTsGtjeILhnRXDU_utupoHzrpAEjWSfegJgikyU744xqLz__8ePPkKRVWb2FaSrVPK0V0e9pF4lEx6oGdYK-II"/>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4jmTspd5oFVc2SUXCB4uKGMLAcWjHdNKN2Gff4mEqmIisfWRIVzA-R0hYEPKea87LoHp7SGwxx_yvg5VgEswpL3KwTfPxdaXBk7esQJ319zY1mwFwO0qgWqJtUoxXmT7AcKCLX7mNDxuRbGuA5XxRRzVDcKba-SpsaJxqZMXRNlIkwH26xYVhNZTsGtjeILhnRXDU_utupoHzrpAEjWSfegJgikyU744xqLz__8ePPkKRVWb2FaSrVPK0V0e9pF4lEx6oGdYK-II"/>
 <div class="absolute top-3 left-3 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary">SON 1 KİŞİ</div>
 </div>
 <div class="space-y-3">
@@ -149,7 +148,6 @@
 <span class="block text-xl font-bold text-primary">6.200 TL</span>
 </div>
 </div>
-<!-- Kinetic Progress -->
 <div class="space-y-1">
 <div class="flex justify-between text-xs font-bold text-on-surface-variant">
 <span>Katılımcı: 2/3</span>
@@ -167,9 +165,9 @@
 </div>
 </div>
 <!-- Product 2: Stanley -->
-<div class="group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer">
+<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="2" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBQK5pfOk4CQjdQEYUfbTov0siqi8nNnnQrMJLLKOyAeetcItTiGdk7BmcG5Qz1bRukL-H36tCMSr47K8lMHV3tomsOHYLFdIbHBo1GndL5Dp6VjHKz8Z56kg6zk8fJwqeaAtrIP9XPp3Ipbpn0945IXKc1YcFCxUo6AI2VoircezXHcL9fc1jTyIXXLJKKjZfQW3uAnWr6KLWKQWxkjHLYNIuDyX8-VojRDPLPVV7Hhl2trpFAGyfzruAqcic3VXl9SMdE5nlveyc" data-name="Stanley Quencher 1.18L" data-old-price="2.400 TL" data-participants="5" data-price="1.850 TL" data-tier1-label="5 Kişi" data-tier1-price="2.100 TL" data-tier2-label="10 Kişi (TAM)" data-tier2-price="1.850 TL" data-time="12:05:40" data-total="10" data-urgency="5 kişi daha katılırsa en düşük fiyat aktif olacak!">
 <div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Stanley Quencher H2.0 Tumbler in soft rose color, lifestyle photography, luxury hydration accessory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQK5pfOk4CQjdQEYUfbTov0siqi8nNnnQrMJLLKOyAeetcItTiGdk7BmcG5Qz1bRukL-H36tCMSr47K8lMHV3tomsOHYLFdIbHBo1GndL5Dp6VjHKz8Z56kg6zk8fJwqeaAtrIP9XPp3Ipbpn0945IXKc1YcFCxUo6AI2VoircezXHcL9fc1jTyIXXLJKKjZfQW3uAnWr6KLWKQWxkjHLYNIuDyX8-VojRDPLPVV7Hhl2trpFAGyfzruAqcic3VXl9SMdE5nlveyc"/>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQK5pfOk4CQjdQEYUfbTov0siqi8nNnnQrMJLLKOyAeetcItTiGdk7BmcG5Qz1bRukL-H36tCMSr47K8lMHV3tomsOHYLFdIbHBo1GndL5Dp6VjHKz8Z56kg6zk8fJwqeaAtrIP9XPp3Ipbpn0945IXKc1YcFCxUo6AI2VoircezXHcL9fc1jTyIXXLJKKjZfQW3uAnWr6KLWKQWxkjHLYNIuDyX8-VojRDPLPVV7Hhl2trpFAGyfzruAqcic3VXl9SMdE5nlveyc"/>
 </div>
 <div class="space-y-3">
 <div class="flex justify-between items-start">
@@ -196,9 +194,9 @@
 </div>
 </div>
 <!-- Product 3: Dyson -->
-<div class="group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer">
+<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="3" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuB5tWB4ITajCZ8-7ylI8_XdCgfRKnlOLUxbVV4hh8RivKFeXr5sTjfD3xpgWdoVYJp-kPWcbrQ3UdslhNuz29TppV7HpjfPRPZT-G8EKJfizUhYERGvBULPhGP_3F0bTrlwNOqPfEKVrgwjGd4y5CTMKZTzoXNFGAYLxoioUTEVSROW78yoJvtiYSCdzhZZzMEx4XgpOsELiRLlz6Kn7ZvK2-6QKdX-gixZBRGexoQ7JbM510XULL7bP1L0xdli6IXsAWIocNXvpOA" data-name="Dyson Airwrap Multi-Styler" data-old-price="19.500 TL" data-participants="1" data-price="16.900 TL" data-tier1-label="2 Kişi" data-tier1-price="17.900 TL" data-tier2-label="3 Kişi (TAM)" data-tier2-price="16.900 TL" data-time="23:59:59" data-total="3" data-urgency="Bu özel seriyi kaçırmamak için ilk adımı sen at!">
 <div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Dyson Airwrap Multi-Styler in prussian blue and copper, high-end product photography on marble" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5tWB4ITajCZ8-7ylI8_XdCgfRKnlOLUxbVV4hh8RivKFeXr5sTjfD3xpgWdoVYJp-kPWcbrQ3UdslhNuz29TppV7HpjfPRPZT-G8EKJfizUhYERGvBULPhGP_3F0bTrlwNOqPfEKVrgwjGd4y5CTMKZTzoXNFGAYLxoioUTEVSROW78yoJvtiYSCdzhZZzMEx4XgpOsELiRLlz6Kn7ZvK2-6QKdX-gixZBRGexoQ7JbM510XULL7bP1L0xdli6IXsAWIocNXvpOA"/>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5tWB4ITajCZ8-7ylI8_XdCgfRKnlOLUxbVV4hh8RivKFeXr5sTjfD3xpgWdoVYJp-kPWcbrQ3UdslhNuz29TppV7HpjfPRPZT-G8EKJfizUhYERGvBULPhGP_3F0bTrlwNOqPfEKVrgwjGd4y5CTMKZTzoXNFGAYLxoioUTEVSROW78yoJvtiYSCdzhZZzMEx4XgpOsELiRLlz6Kn7ZvK2-6QKdX-gixZBRGexoQ7JbM510XULL7bP1L0xdli6IXsAWIocNXvpOA"/>
 <div class="absolute top-3 right-3 bg-tertiary text-white px-3 py-1 rounded-full text-xs font-bold">ÖZEL SERİ</div>
 </div>
 <div class="space-y-3">
@@ -226,9 +224,9 @@
 </div>
 </div>
 <!-- Product 4: Instax -->
-<div class="group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer">
+<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="4" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuCffn7yi9pJJ68rY6WhgWyPEhwsY7g7DwdHNPZScOhyDb2_bqIWybMqNEy5mHfAfMYjvWYNAXTKrA7VIzTcN07hgjtS1hrK0-nnV2Qkd08ujxxFydkVMF9HXJsJvXpaVO0UL6u55Rb4xGSuw40gtyVTall9EnTvezRy-3Kor7g0LlvJyJgxxkVJyOogTL8vo7m5eyZRmVA8eNTq_nrQtr6D4a2d8STO-Ch6-HIPwRh-I-EVscIPSxB2fGRNi-5XXGoPKzRmeqDB8ik" data-name="Fujifilm Instax Mini 12" data-old-price="4.200 TL" data-participants="4" data-price="3.100 TL" data-tier1-label="3 Kişi" data-tier1-price="3.500 TL" data-tier2-label="5 Kişi (TAM)" data-tier2-price="3.100 TL" data-time="01:15:30" data-total="5" data-urgency="Sadece 1 kişi daha katılırsa grup tamamlanıyor!">
 <div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Instax Mini 12 camera in clay white, playful lifestyle photography with pastel tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffn7yi9pJJ68rY6WhgWyPEhwsY7g7DwdHNPZScOhyDb2_bqIWybMqNEy5mHfAfMYjvWYNAXTKrA7VIzTcN07hgjtS1hrK0-nnV2Qkd08ujxxFydkVMF9HXJsJvXpaVO0UL6u55Rb4xGSuw40gtyVTall9EnTvezRy-3Kor7g0LlvJyJgxxkVJyOogTL8vo7m5eyZRmVA8eNTq_nrQtr6D4a2d8STO-Ch6-HIPwRh-I-EVscIPSxB2fGRNi-5XXGoPKzRmeqDB8ik"/>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffn7yi9pJJ68rY6WhgWyPEhwsY7g7DwdHNPZScOhyDb2_bqIWybMqNEy5mHfAfMYjvWYNAXTKrA7VIzTcN07hgjtS1hrK0-nnV2Qkd08ujxxFydkVMF9HXJsJvXpaVO0UL6u55Rb4xGSuw40gtyVTall9EnTvezRy-3Kor7g0LlvJyJgxxkVJyOogTL8vo7m5eyZRmVA8eNTq_nrQtr6D4a2d8STO-Ch6-HIPwRh-I-EVscIPSxB2fGRNi-5XXGoPKzRmeqDB8ik"/>
 </div>
 <div class="space-y-3">
 <div class="flex justify-between items-start">
@@ -256,7 +254,7 @@
 </div>
 </div>
 </main>
-<!-- Social Proof Notification (Floating) -->
+<!-- Floating Info -->
 <div class="fixed bottom-24 left-6 z-40">
 <div class="bg-surface-container-lowest/90 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-outline-variant/10 flex items-center gap-3 animate-bounce">
 <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
@@ -272,7 +270,7 @@
 <p class="text-[10px] font-bold text-tertiary">5 kişi şu an inceliyor</p>
 </div>
 </div>
-<!-- Product Detail Overlay (Simulated State) -->
+<!-- Dynamic Product Detail Modal -->
 <div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="product-detail-modal">
 <div class="bg-white w-full max-w-4xl rounded-[2.5rem] overflow-hidden relative shadow-2xl animate-in fade-in zoom-in duration-300">
 <button class="absolute top-6 right-6 z-10 w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-surface-container transition-all" id="close-modal">
@@ -281,34 +279,43 @@
 <div class="flex flex-col md:flex-row h-full">
 <!-- Image Side -->
 <div class="w-full md:w-1/2 bg-surface-container-low p-8 flex items-center justify-center">
-<img class="w-full h-auto drop-shadow-2xl" data-alt="Close up of Apple Airpods Pro 2 showing precision details and premium white finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RYhVAM_jRnUkbIgA4sMfYTs3wUUoGDWpBbKWAyhAots0XoVMi5mF564-dF33M9gAy2S9MJLVCDM2Xoj6ObvUByZKMxMToyX-SszR0GsKSoINpfFRd3pDc6nU4OvXQHLI3lkKg9mdAeN6146hxDVQOeJn_vG3rC_b8_u71igaq7nt7XVOu7ppy-YNncLghzdj1BEFOv7IkR0UeclArvfgkw8Qz16dVV7ooTt6s8uAepCq8h8epCvCdUkVsY-hEqtXkg8yyknVVmE"/>
+<img class="w-full h-auto drop-shadow-2xl" id="modal-img" src=""/>
 </div>
 <!-- Content Side -->
 <div class="w-full md:w-1/2 p-8 md:p-12 space-y-8 overflow-y-auto max-h-[921px]">
 <div>
 <span class="text-primary font-bold text-sm uppercase tracking-widest block mb-2">GRUP ALIMI AKTİF</span>
-<h2 class="text-3xl font-headline font-bold text-on-surface">Apple AirPods Pro 2. Nesil USB-C</h2>
+<h2 class="text-3xl font-headline font-bold text-on-surface" id="modal-title">Ürün Adı</h2>
 <div class="mt-4 flex items-baseline gap-3">
-<span class="text-4xl font-headline font-extrabold text-primary">6.200 TL</span>
-<span class="text-lg text-on-surface-variant line-through">7.500 TL</span>
+<span class="text-4xl font-headline font-extrabold text-primary" id="modal-price">0 TL</span>
+<span class="text-lg text-on-surface-variant line-through" id="modal-old-price">0 TL</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-xs font-bold text-on-surface-variant">
+<span id="modal-participants-text">Katılımcı: 0/0</span>
+<span id="modal-progress-text">%0 Tamamlandı</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary kinetic-progress" id="modal-progress-bar" style="width: 0%"></div>
 </div>
 </div>
 <div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/15">
 <h4 class="font-bold mb-4 text-sm uppercase tracking-tight">İndirim Kademeleri</h4>
 <div class="space-y-4">
 <div class="flex justify-between items-center opacity-60">
-<span class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-primary">check_circle</span> 2 Kişi</span>
-<span class="font-bold">7.000 TL</span>
+<span class="flex items-center gap-2 font-medium" id="modal-tier1-label"><span class="material-symbols-outlined text-primary">check_circle</span> -</span>
+<span class="font-bold" id="modal-tier1-price">-</span>
 </div>
 <div class="flex justify-between items-center bg-primary/5 p-3 rounded-xl border border-primary/20">
-<span class="flex items-center gap-2 font-bold text-primary"><span class="material-symbols-outlined">groups</span> 3 Kişi (TAM)</span>
-<span class="font-extrabold text-primary">6.200 TL</span>
+<span class="flex items-center gap-2 font-bold text-primary" id="modal-tier2-label"><span class="material-symbols-outlined">groups</span> -</span>
+<span class="font-extrabold text-primary" id="modal-tier2-price">-</span>
 </div>
 </div>
 </div>
 <div class="flex items-center gap-4 p-4 bg-tertiary-container/10 rounded-xl border-l-4 border-tertiary">
 <span class="material-symbols-outlined text-tertiary">notification_important</span>
-<p class="text-sm font-bold text-on-tertiary-container leading-tight">Sadece 1 kişi daha katılırsa fiyat düşecek!</p>
+<p class="text-sm font-bold text-on-tertiary-container leading-tight" id="modal-urgency">Mesaj...</p>
 </div>
 <div class="space-y-4">
 <button class="w-full bg-primary text-on-primary py-5 rounded-2xl font-headline font-extrabold text-lg shadow-[0_12px_40px_rgba(175,39,0,0.25)] hover:scale-[1.02] active:scale-95 transition-all">
@@ -320,22 +327,6 @@
 </div>
 </div>
 </div>
-<!-- Success Popup (Simulated Hidden) -->
-<div class="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-black/60 hidden">
-<div class="bg-surface-container-lowest max-w-sm w-full rounded-[2rem] p-8 text-center animate-in zoom-in duration-300">
-<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
-</div>
-<h3 class="text-2xl font-headline font-bold mb-2">🎉 Gruba katıldın!</h3>
-<p class="text-on-surface-variant mb-8">Seninle birlikte 3 kişiye ulaştık. İndirimli fiyattan yararlanmak için grubun onaylanmasını bekliyoruz.</p>
-<button class="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:opacity-90 transition-all mb-4">
-<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.544.917 3.41 1.4 5.316 1.401 5.404 0 9.801-4.397 9.803-9.802 0-2.618-1.02-5.08-2.871-6.932-1.851-1.852-4.311-2.872-6.93-2.873-5.405 0-9.803 4.398-9.803 9.804 0 2.015.523 3.98 1.515 5.715l-1.007 3.676 3.777-.991z"></path></svg>
-                ARKADAŞINLA PAYLAŞ
-            </button>
-<button class="w-full py-2 text-on-surface-variant font-bold text-sm">Göz Atmaya Devam Et</button>
-</div>
-</div>
-<!-- Footer -->
 <footer class="bg-[#ffedeb] dark:bg-[#150706] w-full py-12 px-8 border-t border-[#e09c98]/15">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
 <div class="col-span-1 md:col-span-1">
@@ -388,14 +379,60 @@
 </a>
 </nav>
 <script>
-  document.getElementById('close-modal').addEventListener('click', function() {
-    document.getElementById('product-detail-modal').classList.add('hidden');
+  const modal = document.getElementById('product-detail-modal');
+  const closeModalBtn = document.getElementById('close-modal');
+
+  // Modal Elements
+  const mTitle = document.getElementById('modal-title');
+  const mImg = document.getElementById('modal-img');
+  const mPrice = document.getElementById('modal-price');
+  const mOldPrice = document.getElementById('modal-old-price');
+  const mPartText = document.getElementById('modal-participants-text');
+  const mProgText = document.getElementById('modal-progress-text');
+  const mProgBar = document.getElementById('modal-progress-bar');
+  const mTier1L = document.getElementById('modal-tier1-label');
+  const mTier1P = document.getElementById('modal-tier1-price');
+  const mTier2L = document.getElementById('modal-tier2-label');
+  const mTier2P = document.getElementById('modal-tier2-price');
+  const mUrgency = document.getElementById('modal-urgency');
+
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const d = card.dataset;
+      
+      mTitle.textContent = d.name;
+      mImg.src = d.img;
+      mPrice.textContent = d.price;
+      mOldPrice.textContent = d.oldPrice;
+      
+      const p = parseInt(d.participants);
+      const t = parseInt(d.total);
+      const percent = Math.round((p / t) * 100);
+      
+      mPartText.textContent = `Katılımcı: ${p}/${t}`;
+      mProgText.textContent = `%${percent} Tamamlandı`;
+      mProgBar.style.width = `${percent}%`;
+      
+      mTier1L.innerHTML = `<span class="material-symbols-outlined text-primary">check_circle</span> ${d.tier1Label}`;
+      mTier1P.textContent = d.tier1Price;
+      
+      mTier2L.innerHTML = `<span class="material-symbols-outlined">groups</span> ${d.tier2Label}`;
+      mTier2P.textContent = d.tier2Price;
+      
+      mUrgency.textContent = d.urgency;
+
+      modal.classList.remove('hidden');
+    });
   });
 
-  // Optional: Close modal when clicking outside the content area
-  document.getElementById('product-detail-modal').addEventListener('click', function(e) {
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+
+  modal.addEventListener('click', function(e) {
     if (e.target === this) {
       this.classList.add('hidden');
     }
   });
-</script></body></html>
+</script>
+</body></html>
