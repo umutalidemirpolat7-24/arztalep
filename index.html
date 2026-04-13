@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html class="light" lang="tr"><head>
+<html class="scroll-smooth" lang="tr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>COLLECTIVE LUXURY | Ön Talep Grup Alışverişi</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
@@ -13,62 +13,63 @@
         theme: {
           extend: {
             "colors": {
-                    "tertiary-dim": "#794200",
-                    "tertiary": "#8a4c00",
-                    "secondary": "#b22100",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-fixed-variant": "#592f00",
-                    "tertiary-fixed": "#ff9727",
-                    "primary-dim": "#9a2100",
-                    "inverse-primary": "#ff562c",
-                    "inverse-surface": "#240304",
-                    "primary": "#af2700",
-                    "surface-container": "#ffe1df",
-                    "on-tertiary-container": "#4c2700",
-                    "primary-container": "#ff7856",
-                    "on-primary-container": "#490b00",
-                    "outline": "#a36764",
-                    "outline-variant": "#e09c98",
-                    "surface-container-low": "#ffedeb",
-                    "error-container": "#fb5151",
-                    "error": "#b31b25",
-                    "on-background": "#4e211f",
-                    "primary-fixed": "#ff7856",
-                    "on-error-container": "#570008",
-                    "surface-bright": "#fff4f3",
-                    "secondary-fixed": "#ffc4b7",
-                    "on-primary-fixed-variant": "#5a0f00",
-                    "on-secondary-container": "#8d1800",
-                    "secondary-fixed-dim": "#ffb09f",
-                    "on-primary": "#ffefec",
-                    "on-surface-variant": "#834c4a",
-                    "background": "#fff4f3",
-                    "surface": "#fff4f3",
-                    "tertiary-container": "#ff9727",
-                    "inverse-on-surface": "#ce8c88",
-                    "surface-container-highest": "#ffd2cf",
-                    "surface-variant": "#ffd2cf",
-                    "surface-container-high": "#ffdad7",
-                    "on-error": "#ffefee",
-                    "on-secondary": "#ffefec",
-                    "on-tertiary-fixed": "#281200",
-                    "surface-tint": "#af2700",
-                    "on-primary-fixed": "#000000",
-                    "secondary-dim": "#9c1c00",
-                    "on-secondary-fixed-variant": "#9e1d00",
-                    "error-dim": "#9f0519",
+                    "primary-fixed-dim": "#ff5c34",
                     "secondary-container": "#ffc4b7",
+                    "background": "#fff4f3",
+                    "inverse-surface": "#240304",
+                    "outline-variant": "#e09c98",
+                    "outline": "#a36764",
+                    "error-container": "#fb5151",
+                    "on-tertiary-fixed": "#281200",
+                    "tertiary-fixed": "#ff9727",
+                    "secondary-fixed": "#ffc4b7",
+                    "on-secondary-fixed-variant": "#9e1d00",
+                    "surface-container-low": "#ffedeb",
+                    "surface-container": "#ffe1df",
                     "surface-dim": "#ffc7c3",
+                    "surface-bright": "#fff4f3",
                     "on-tertiary": "#fff0e6",
-                    "on-surface": "#4e211f",
-                    "tertiary-fixed-dim": "#f18900",
+                    "on-secondary": "#ffefec",
+                    "on-secondary-container": "#8d1800",
+                    "on-primary-fixed-variant": "#5a0f00",
                     "on-secondary-fixed": "#6a1000",
-                    "primary-fixed-dim": "#ff5c34"
+                    "inverse-primary": "#ff562c",
+                    "tertiary-dim": "#794200",
+                    "secondary": "#b22100",
+                    "on-primary-container": "#490b00",
+                    "tertiary-fixed-dim": "#f18900",
+                    "secondary-fixed-dim": "#ffb09f",
+                    "primary-fixed": "#ff7856",
+                    "on-error": "#ffefee",
+                    "on-surface": "#4e211f",
+                    "secondary-dim": "#9c1c00",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#ce8c88",
+                    "error": "#b31b25",
+                    "error-dim": "#9f0519",
+                    "surface-container-high": "#ffdad7",
+                    "surface-variant": "#ffd2cf",
+                    "surface-tint": "#af2700",
+                    "on-tertiary-fixed-variant": "#592f00",
+                    "tertiary": "#8a4c00",
+                    "surface": "#fff4f3",
+                    "primary": "#af2700",
+                    "on-primary": "#ffefec",
+                    "on-primary-fixed": "#000000",
+                    "on-surface-variant": "#834c4a",
+                    "on-background": "#4e211f",
+                    "on-tertiary-container": "#4c2700",
+                    "tertiary-container": "#ff9727",
+                    "on-error-container": "#570008",
+                    "surface-container-highest": "#ffd2cf",
+                    "primary-container": "#ff7856",
+                    "primary-dim": "#9a2100"
             },
             "borderRadius": {
                     "DEFAULT": "0.25rem",
                     "lg": "0.5rem",
                     "xl": "0.75rem",
+                    "xxl": "1.5rem",
                     "full": "9999px"
             },
             "fontFamily": {
@@ -84,327 +85,339 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        body { font-family: 'Manrope', sans-serif; }
-        h1, h2, h3, .headline { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .transition-page { transition: opacity 0.3s ease-in-out; }
+        .tonal-shift-only {
+            box-shadow: none !important;
+            border: none !important;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
     </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary/20">
+<body class="bg-background text-on-background font-body antialiased pb-24 lg:pb-0">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-[#fff4f3]/90 backdrop-blur-md border-b border-outline-variant/20 dark:bg-stone-950">
-<nav class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
-<div class="text-xl font-bold tracking-tighter text-[#4e211f] dark:text-stone-100 cursor-pointer uppercase" id="logo-btn">COLLECTIVE LUXURY</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-[#af2700] font-bold border-b-2 border-[#af2700] pb-1 hover:text-[#af2700] transition-colors duration-300" href="#" onclick="showPage('home')">Alışveriş</a>
-<a class="text-[#4e211f] dark:text-stone-400 font-medium hover:text-[#af2700] transition-colors duration-300" href="#">Gruplar</a>
-<a class="text-[#4e211f] dark:text-stone-400 font-medium hover:text-[#af2700] transition-colors duration-300" href="#">Yeni Gelenler</a>
-<a class="text-[#4e211f] dark:text-stone-400 font-medium hover:text-[#af2700] transition-colors duration-300" href="#">Arşiv</a>
-</div>
-<div class="flex items-center space-x-4">
-<button class="p-2 transition-transform active:opacity-80 scale-95">
-<span class="material-symbols-outlined text-[#af2700]">shopping_bag</span>
-</button>
-<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden">
-<img alt="Kullanıcı profili" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-kvm1dGTVTJrQl5AqnBzJMHNLytMwTEFKJAHVqJ_EIrR8B74GnFbiSKgoe0WomM94XNYrQl7qOxOU6t6beEQjTWxoR0SA8h9QR5e_Vt584lJXGs81gkkcOp-kbm3xWTUsUQTaNfAlIXgFQ0Cy-5pkJJsdQ1fSV5zt06WY0ogX_0SdzdT1iJDA7wgZidlBqIeezh12MXW0OTTcuVadUJ6Moqxh0bJiSvVLjZBFXxS1lfW9Wkcvp6kTfXt7lN3O8mreCBXd67osCY"/>
-</div>
-</div>
+<header class="fixed top-0 w-full z-50 bg-[#fff4f3] dark:bg-[#1a0a09] flex justify-between items-center px-6 py-4 h-16 tonal-shift-only">
+<div class="text-2xl font-black text-[#af2700] italic dark:text-[#ff7856] font-headline uppercase tracking-tight">
+            Kolektif Lüks
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<nav class="flex gap-6">
+<a class="text-[#af2700] font-bold border-b-2 border-[#af2700] font-headline text-lg uppercase tracking-tight transition-opacity hover:opacity-80" href="#">Keşfet</a>
+<a class="text-[#4e211f] dark:text-[#ffedeb] opacity-70 font-headline text-lg uppercase tracking-tight transition-opacity hover:opacity-80" href="#">En İyiler</a>
+<a class="text-[#4e211f] dark:text-[#ffedeb] opacity-70 font-headline text-lg uppercase tracking-tight transition-opacity hover:opacity-80" href="#">Gruplarım</a>
 </nav>
-</header>
-<!-- HOME PAGE SECTION (SCREEN_10) -->
-<main class="pt-24 pb-32 px-6 max-w-screen-2xl mx-auto transition-page" id="home-page">
-<!-- Hero Section -->
-<section class="mb-12">
-<div class="bg-surface-container-low rounded-2xl p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
-<div class="z-10 max-w-xl">
-<span class="text-primary font-bold uppercase tracking-widest text-xs mb-4 block">Sınırlı Talep Döngüsü</span>
-<h1 class="text-4xl md:text-6xl font-extrabold text-on-surface leading-none mb-6">ÖN TALEP <br/>ÖZEL KOLEKSİYON</h1>
-<p class="text-on-surface-variant text-lg mb-8 max-w-md">Lüks moda, kolektif güç. Üretimi sadece grup hedefi tamamlandığında başlatıyoruz. Daha az atık, daha iyi fiyatlar.</p>
-<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/10 hover:translate-y-[-2px] hover:shadow-primary/20 transition-all inline-block" href="#aktif-gruplar">Aktif Grupları İncele</a>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#af2700] cursor-pointer">notifications</span>
+<span class="material-symbols-outlined text-[#af2700] cursor-pointer">shopping_bag</span>
 </div>
-<div class="relative w-full md:w-1/2 h-64 md:h-96">
-<img alt="Öne Çıkan Ürün" class="absolute inset-0 w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpLWhKrztLfZMT1Iz6Z31I6IahnDzenfriQsUFSK6pln6BcWjpFHvWiu6KhgiMIHoZeAVvKLIrYXt72E6npl7p-uziAI_UOpljxLAnIMsk3B59q6NKj2DMNZq55FORBJ9niyzax4ShTNBt1DGh0knDvxwfS600liGhq5bFIlMKSh8mtfjuZMnruqZLqyQigzRyCdzcqodfxFdLUMY0zgKA1Tv_esi44KS5eaPxbfim7IJJBsNJlppGruWH8t6PrJI8uJKE75OUO8"/>
+</div>
+<div class="md:hidden flex items-center gap-4">
+<span class="material-symbols-outlined text-[#af2700]">notifications</span>
+<span class="material-symbols-outlined text-[#af2700]">shopping_bag</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 pt-24 pb-12">
+<!-- Hero Section: Kinetic Minimalism -->
+<section class="relative overflow-hidden rounded-xxl bg-surface-container-low min-h-[400px] flex items-center mb-10 group">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Watch Hero" class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="luxury minimalist wrist watch on a warm marble surface with soft afternoon sunlight and sharp shadows editorial fashion style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKfXzVJDP8ISV3EKx4czooHy3qXCym8oJT6EVs--2yrDuCEEUVb3KuzNJhuJCFFjf_CsbTGTNvJcnM2Cxe2soCQGKNQNq52KUGwaG5WEPHNj9oxq40tnqZLUTog2dxuq-AvqZUf0h_Rc2t9bF9TachiczEVt6D-2BPDEblaEqmLbkgaY4Ir7TVbavNzCFKEYi2fBUEf98C67EOlBZhBpu4opXuYx8fWmh9NJ2WbgNsiw-FQIjTaDbSVNgjRVXTuQGfVGKqABwvuKs"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 lg:p-16 max-w-2xl">
+<div class="inline-flex items-center gap-2 bg-primary text-on-primary px-4 py-1 rounded-full mb-6 animate-pulse">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="text-xs font-bold uppercase tracking-widest">Sınırlı Zaman</span>
+</div>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface mb-6 leading-tight">
+                    3 KİŞİ OLURSA <br/>FİYAT <span class="text-primary italic">DÜŞÜYOR</span> 🔥
+                </h1>
+<button class="bg-primary text-on-primary font-headline font-bold text-lg px-10 py-5 rounded-xl shadow-[0_12px_40px_rgba(175,39,0,0.25)] hover:scale-105 active:scale-95 transition-all">
+                    Hemen Katıl
+                </button>
+</div>
+</section>
+<!-- Best Sellers: Bento Grid Style -->
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="font-headline text-3xl font-bold text-on-surface">Çok Satanlar</h2>
+<p class="text-on-surface-variant font-body">Topluluğun en çok talep ettiği parçalar</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-1 hover:underline">
+                    Tümünü Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Large Item -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xxl p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 rounded-lg text-xs font-bold uppercase">🔥 Popüler</span>
+</div>
+<img alt="Red Sneaker" class="w-4/5 mx-auto -mt-8 -rotate-12 drop-shadow-2xl" data-alt="bright red performance running sneaker floating in mid-air against a clean neutral background high-end product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC949cgRqc4h3o_slwn-MRtsUAOQ9GywM1uyu1E-zbDjOlITbq1p-6H7yPUYAIhv6UDFcSrVoDklUzsioGwg0m4HyC3XtDIPl70LkeTo9S0LGqMUdjZZHPyvpu37LoxF6CZyJgF3nsZtKuiYYlHYN8MmbiZnhbIzqPeXSgfkK0yR0b4H7IWXAgQw-hd6Ayj_aWkrlFh7e-bluW3FPDHWtezalh_0bLO0_QW-8iqLDChBo60TTN2r6864hmOoGGPycrtoUmfhaF3uvk"/>
+<div class="mt-4">
+<h3 class="font-headline text-2xl font-bold mb-1">UltraBoost Kolektif Red</h3>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="text-primary text-3xl font-black">₺2.450</span>
+<span class="text-on-surface-variant line-through text-sm">₺4.800</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full mb-2 overflow-hidden">
+<div class="bg-primary h-full w-2/3"></div>
+</div>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-tighter">Grup Durumu: 2/3 Kişi Hazır</p>
+</div>
+</div>
+<!-- Medium Items -->
+<div class="md:col-span-2 bg-surface-container-low rounded-xxl p-6 flex items-center gap-6 overflow-hidden">
+<div class="flex-1">
+<span class="text-tertiary font-bold text-[10px] uppercase tracking-widest block mb-1">⚡ Çok Satan</span>
+<h3 class="font-headline text-lg font-bold mb-2">Retro Tech Cam</h3>
+<p class="text-primary font-bold text-xl mb-4">₺1.120</p>
+<button class="bg-on-background text-surface px-4 py-2 rounded-lg text-sm font-bold">Gruba Katıl</button>
+</div>
+<div class="w-1/3">
+<img alt="Polaroid" class="scale-125 rotate-6" data-alt="vintage yellow instant film camera on a soft pink surface studio lighting editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx8IcVGEp8DzLCoUQyWR1PWYGZui2RzF5Ry-71oONpHUVahJRbpxVTEr9fMY1jUZZldjW3fBUPsH38-fS7oIRcSvfSAT2TzTqCGmbPV6R2J7qqj82Ai04XfE_0IFVIerBMdnzmu1qtYN7ZrJDBOA7oUrHtnhytyrGKHJ2f5IEgNIusFxS5Yf-TZfVTAMmwJgF3AOg76qNXbhgCa2Wb0kv3iroJwKPCzgD6IIhdRTF_oIyPaDmOd-CLsB6XOtpnEfhFfQvSNREgJgc"/>
+</div>
+</div>
+<div class="bg-surface-container-highest rounded-xxl p-6 flex flex-col items-center text-center">
+<img alt="Designer Glasses" class="w-full mb-4" data-alt="designer round sunglasses with gold frames on a white reflective surface studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3UMeOOFLj-Ma-aAHgbHtyABgM2xkkxH4VxN5reEBSovE1QgkeVmkNqkL8-y-KqHthqNnnvZWN5H1uz-TN33wsmh5zuJGDoR9W-hf90rJ2kKPCUfW6npmNpEx0DWCpgRF0qoEar0VkXOnrXO_mBHRvgFbS5UjPgsmUp8hlV4DHz-N5BETiwbXkZN8qp1SYegxdNGJ9jNpCMhWo3cKYey54NCm8IatYoid2SqSfqdWF5zH3XMZa0x0nR6DLegoqLAjKEQfI4FX4Zr8"/>
+<h3 class="font-headline text-sm font-bold">Noir Edition Gözlük</h3>
+<p class="text-primary font-bold">₺890</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xxl p-6 flex flex-col items-center text-center border-2 border-primary/10">
+<img alt="Leather Bag" class="w-full mb-4" data-alt="luxury tan leather handbag with gold hardware isolated on a neutral background editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3rl7xuvb4IaeNaYBxZdj-W-4tYS7_n3ISnGHveeaR-vi1AJens6_FOBRq3LW0jgBxAxYLWZjHHm7wq65jGNo_gIl-0Ygi8MJiTOCS0EWJbCWs2YBjI1oSvukj1rnYkwbbCaF0GLzfapsi9XNPA-W5uAOUjHgbeXCHKNFk8W3EYELSIZ1RSvLWlx4l-RSsnzvzWgJg2sd1WQDA7obiDIJBUN1zphmHsC_vKHrcsCoMQK8apb6cfPh8bzexQt6TO9xE7l8K_bncw9c"/>
+<h3 class="font-headline text-sm font-bold">Oryantal Deri Çanta</h3>
+<p class="text-primary font-bold">₺3.200</p>
 </div>
 </div>
 </section>
-<!-- Product Grid -->
-<div class="mb-8 flex justify-between items-end">
-<div>
-<h2 class="text-2xl font-bold text-on-surface" id="aktif-gruplar">Aktif Gruplar</h2>
-<p class="text-on-surface-variant font-medium">Şimdi katılın ya da sonsuza dek kaçırın.</p>
+<!-- Active Groups: Urgency Grid -->
+<section class="mb-20">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-2 h-8 bg-primary"></div>
+<h2 class="font-headline text-3xl font-bold text-on-surface">Aktif Gruplar</h2>
 </div>
-<span class="text-primary font-bold text-sm cursor-pointer hover:underline">Tümünü Gör</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-<!-- Product Card 1 (Red Shoe) -->
-<div class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/30 cursor-pointer" id="product-card-red">
-<div class="relative aspect-[4/5] bg-surface-container-highest/30 overflow-hidden">
-<img alt="Velocity Knit Runner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjqj-dUN2FwXh8n92-agBmCCR_Y6tS0ClOKt8yl_YR-GzbtB6ZLeYZ3dOKPIoxNKoZr0xHjgkcUtKVTwO7nz8RAWHzcTn9igXXjyxKu0ESQNkHu_u_LY0uOGZ_nDW0qEruCYb2gj81SUT463vGzz29R5iaeLRyiHEqVh4qZePN9Vi11MSZoVNW4FTr7hfe5VplVJas1u7Aae4ZXN5K3PXCvJvyHiSos5kR4QZ-Y8tTbfwCkpwntl7qa1CRX6_TVO6rmt0nRxyX1Qw"/>
-<div class="absolute top-4 left-4 flex flex-col gap-2">
-<div class="bg-white/80 backdrop-blur-xl px-3 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
-<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">timer</span>
-<span class="text-xs font-bold font-body text-on-surface">14:22:05</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-low rounded-xxl p-6 group cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative mb-6">
+<img alt="Sneaker" class="w-full h-48 object-contain transition-transform group-hover:scale-110" data-alt="close-up side profile of a red performance sneaker high contrast studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOPRGGjUyJ3jpRrGiLwhAgp91vDrR6S2ySgBwc63qGrDUvoKkpEVNUA_kAC1MmacQyUoqPnopvIUs_BAoFNeMWbEhg0tyzJ87jOsX_3Jipzwf3V2HCTii_WqgxOmrApYwwQHXyrhkfhFfqeX_jJW6QN2kazb0KP0Wmh1I21tvvDUNSA1E80hzZkJEz1b6pPwenMmfsP4VR1N6m151LMVcdDtU550M6eaophC70BTXYasQwfglLmwWSk7hne5uEe3t_rWtSErhM86c"/>
+<div class="absolute bottom-0 right-0 glass-card px-3 py-1 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-bold text-on-surface">04:22:15</span>
 </div>
 </div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
 <div class="flex justify-between items-start mb-4">
 <div>
-<h3 class="font-bold text-lg leading-tight mb-1 text-on-surface">Velocity Knit Runner</h3>
-<p class="text-on-surface-variant text-sm font-medium">Kolektif Seri</p>
+<h3 class="font-headline font-bold text-xl mb-1">Sneaker X Kolektif</h3>
+<p class="text-on-surface-variant text-sm font-medium">Sınırlı Sayıda Üretim</p>
 </div>
 <div class="text-right">
-<span class="block text-[10px] text-on-surface-variant font-bold uppercase tracking-tight">MARKET FİYATI</span>
-<span class="block text-sm text-on-surface-variant line-through mb-1">$420</span>
-<span class="block text-[10px] text-primary font-bold uppercase tracking-tight">GRUP FİYATI</span>
-<span class="block text-2xl font-extrabold text-primary">$180</span>
+<p class="text-on-surface-variant line-through text-xs">₺4.800</p>
+<p class="text-primary text-2xl font-black">₺2.450</p>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-4 rounded-xl mb-6">
-<div class="flex justify-between text-xs font-bold mb-2">
-<span class="text-primary uppercase tracking-wider">KATILANLAR</span>
-<span class="text-on-surface">2/3 Kişi</span>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-widest">
+<span>Katılımcılar: 2/3</span>
+<span class="text-primary">Son 1 Kişi!</span>
 </div>
-<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary w-[66%]"></div>
-</div>
-<p class="text-[10px] text-on-surface-variant mt-2 font-medium">Üretimi başlatmak için son 1 kontenjan kaldı.</p>
-</div>
-<div class="mt-auto w-full bg-primary text-on-primary py-4 rounded-xl font-bold text-center transition-all active:scale-95 shadow-lg shadow-primary/10">HEMEN KATIL</div>
-</div>
-</div>
-<!-- Product Card 2 -->
-<div class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/30 opacity-60">
-<div class="relative aspect-[4/5] bg-surface-container-highest/30 overflow-hidden">
-<img alt="Aura Glass Watch" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDK5WEFKyevSHoYHp8S27WkbkqX_13f7bqroOh04CG4eRuCK4ChPnbR2uNAHJbZpPBw3GFAVS16j7Ewhltbp09zpt7uD3tXq_w_WcbuSerPp0WRyjK2aWRQYamJaUrH59tLW2ii0gKXtpswMAAbJqgqrydI8uZEY3WkaMl2rDjAZ9o4k4cIRHNoxP6xjos-DzpeQkt5MuvzmDr04DkVNdicRCt0CwOHIMFlGo2qo2Qqyhjl7P4-GYKFF5VOlj4-EJ9PW8Q41AEl2o"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-on-surface">Aura Glass Watch</h3>
-<div class="mt-auto w-full bg-primary/20 text-primary py-4 rounded-xl font-bold text-center cursor-not-allowed">YAKINDA</div>
-</div>
-</div>
-<!-- Product Card 3 -->
-<div class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/30 opacity-60">
-<div class="relative aspect-[4/5] bg-surface-container-highest/30 overflow-hidden">
-<img alt="Heirloom Loafers" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBql3CtRV6_MbPcM43nX73Yc24Hpjce_BDdhsrIsX1rQ0OMahd499XAaweXYyzngeqf7IXY2uISd5s5tcdT1N6EQn0kKKLB8HQLPKJREJjqJIjjsiVmMA6-x7huFXkMy97xzUOrt1WiBZD8f9i3rA8g0Jiu9i-8gDsYLbLDuGJTkIQTE7oD4DDHZiattkGvoH77ldwGk7vEbX0W-FGqbXpkAbNKTqbVZuzdiUH2OGPLkVHVJvc_1mWEsMxtzbOMmBsss7KJobHlvdI"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-on-surface">Heirloom Loafers</h3>
-<div class="mt-auto w-full bg-primary/20 text-primary py-4 rounded-xl font-bold text-center cursor-not-allowed">YAKINDA</div>
-</div>
-</div>
-<!-- Product Card 4 -->
-<div class="group relative flex flex-col bg-surface-container-low/50 rounded-2xl overflow-hidden grayscale-[0.3]">
-<div class="relative aspect-[4/5] bg-surface-container-highest/30 overflow-hidden">
-<img alt="Solstice Frames" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVDHxF8hcS-Pzv7M7iA3wJctTM4OWNk7J7PWS5TJM1T0_FzOksUvsZchVNJ_LQtnJAXh1wySlHkrau3wiUTei8foyW4bm9I3-DIyliV3ukRsSUP-NMhfMmzoQFGpv_Ivfmw2FSZAq8UmirKbsif6yu5W45287MDd_GqmZYugNPI_0az8PRrIP0ADKrdOpl5XwtxFOU2h1sVJ9boigwpM1E_kg-h0YNVvaKWefx8TJiUrJBl55nO-lesccm9AMyGuljlUq1EilMyOs"/>
-<div class="absolute inset-0 bg-on-surface/5 backdrop-blur-[1px] flex items-center justify-center">
-<span class="bg-tertiary text-on-tertiary px-6 py-2 rounded-full font-bold text-sm tracking-widest shadow-lg uppercase">GRUP DOLDU</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-on-surface/50">Solstice Frames</h3>
-<div class="mt-auto w-full bg-on-surface/10 text-on-surface/40 py-4 rounded-xl font-bold text-center cursor-not-allowed uppercase">GRUP DOLDU</div>
-</div>
-</div>
-</div>
-</main>
-<!-- PRODUCT DETAIL SECTION (SCREEN_8) -->
-<main class="hidden pt-24 pb-16 px-6 max-w-screen-2xl mx-auto transition-page" id="product-detail">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-<!-- Left Side: Dynamic Imagery -->
-<div class="lg:col-span-7 space-y-6">
-<div class="relative bg-surface-container-low rounded-xl overflow-hidden aspect-[4/5] md:aspect-[4/3] lg:aspect-square flex items-center justify-center group">
-<img alt="Lüks Deri Spor Ayakkabı" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy2oDaC19Wpc_gTg27dljLGIq156mJNLlamWChYbXJkOHm7DGNJySaqgr1j0URSxwMwR2uJ_YmVkkWvRTP3L0DskgyL33j7RSJplVpLQYb6VEaPN7mBHjRMa3Cf2gMK77O5QKadAn0MPjGxdFz2VBFDV8Yy3zOX0fRR3POYdGbLhvA3M1jTVTmV1er4_O8K-ljC_IAtZoLsQNOYDSswhb9vF02-GmmZi4d6kweJRHCeTwfdtDCbkwBY9rWObXx0vCuLBmM3gfYUFw"/>
-<div class="absolute top-6 left-6 flex flex-col gap-2">
-<span class="bg-tertiary px-3 py-1 rounded-full text-white text-[10px] font-bold tracking-widest uppercase">Limitli Üretim</span>
-<span class="bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1 rounded-full text-primary text-[10px] font-bold tracking-widest uppercase">Arşiv Buluntusu</span>
-</div>
-</div>
-<div class="grid grid-cols-3 gap-4">
-<div class="bg-surface-container-low rounded-xl aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWc-zQJuq8VQniTcu9wTpe1fJYaFyS63ngCQCh-5joKIrsK2zCcrvaKBAFVbpRXx70ff9wLpwvWmKJYrRlGE-aKkgXVnyLH89rRc530TtcMIQpetrZVqUt7NLcycqUx5VB-2B8lm_Y5Z-p6Sp_Divomla9AusRbBKOBGwxmDOdiNgAlPqzH40Kknpmap1gE58mOKFC8Xt54y9LmZf0100xxKm2wwVMPcSy3JKPksMMNMg6nsfGpsfH4U4HTLE9M-E7eSmk862pf4Q"/></div>
-<div class="bg-surface-container-low rounded-xl aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9tBNX-vXKaF02bqYbjfEWfG0ZaE5KbRqgmx9TpvTitrzMH2OKAi9gJgcGpxuF9PfJKSBRmimcIeX-m5H_U_JU5BhNg7PiPOBGI6KdNZ8RoEKDCugwnbf4EA4kubDEAQUREzlgazlfLXQ8--XCQhferc7K5CxHf3Bzy9lYcsvY-E6a_zPH4L9Dsu6_te5IfDzOmsc8hWzH8gHlky0dvu6WpJ0H1B9fsxvpDy0bKyxB3yFtRUjq-6dnmsO9v4MyvSPNw6-v70XcxxE"/></div>
-<div class="bg-surface-container-low rounded-xl aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKK4538TDK_OvX-c6u4dVakWuQ876EO5HVnJxkhejEcEALd78IleVooRrvIVtFxNdBvG7nJ-UA2r8r2Q8MjkksHBgnnE6cWKA8pZKF6g46yi8p_CYXjRnw-MU3NPszS7fVrvqJaAS-7SoQCy-Q9UmQJDTdXFLXzWXxBwTPq8kbk0E4gkhDy0Ms2362VuQTWMEe2nheBjtRTsKnujfiCeeZ1OzTMthiM_YfjsXgpIGcFcMaB225ePXGxvfKsXQXJxuCjHh-_asM-y0"/></div>
-</div>
-</div>
-<!-- Right Side: Action & Details -->
-<div class="lg:col-span-5 flex flex-col">
-<div class="sticky top-28 space-y-8">
-<div>
-<h1 class="text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-2 uppercase">AETHER-01 <br/>HAKİKİ DERİ</h1>
-<p class="text-on-surface-variant font-body leading-relaxed text-lg max-w-md">
-                        İtalya'da sorumlu bir şekilde tedarik edilen buzağı derisi kullanılarak üretilmiştir. Kolektif talep modeli için yeniden tasarlanan zamansız bir siluet.
-                    </p>
-</div>
-<!-- Pricing & Urgency -->
-<div class="bg-surface-container-lowest p-8 rounded-xl space-y-6 shadow-[0_12px_40px_rgba(78,33,31,0.08)]">
-<div class="flex items-baseline justify-between">
-<div class="flex flex-col">
-<span class="text-label-md font-manrope font-bold text-primary uppercase tracking-widest text-xs mb-1">GRUP FİYATI</span>
-<span class="text-4xl font-headline font-bold text-on-surface">₺8.250</span>
-</div>
-<div class="flex flex-col items-end">
-<span class="text-label-md font-manrope text-on-surface-variant uppercase tracking-widest text-[10px] mb-1">PERAKENDE FİYATI</span>
-<span class="text-xl font-headline font-medium text-on-surface-variant line-through">₺19.900</span>
-</div>
-</div>
-<!-- Progress Bar -->
-<div class="space-y-3">
-<div class="flex justify-between items-end">
-<span class="text-xs font-bold font-manrope uppercase tracking-tighter">KATILIM DURUMU</span>
-<span class="text-sm font-bold font-headline">8 / 12 KATILDI</span>
-</div>
-<div class="h-3 w-full bg-surface-container-highest overflow-hidden">
-<div class="h-full bg-primary w-[66%] relative">
+<div class="w-full bg-surface-container-highest h-3 rounded-sm overflow-hidden">
+<div class="bg-primary h-full w-2/3 relative">
 <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
 </div>
 </div>
-<p class="text-[11px] font-manrope text-on-surface-variant uppercase">Üretimin başlaması için 4 KİŞİ DAHA LAZIM.</p>
 </div>
-<!-- Timer -->
-<div class="flex items-center gap-4 py-4 border-y border-outline-variant/15">
-<span class="material-symbols-outlined text-primary">schedule</span>
-<div class="flex gap-4">
-<div class="text-center">
-<span class="block text-xl font-bold font-headline">02</span>
-<span class="text-[10px] uppercase font-bold text-on-surface-variant">Gün</span>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline font-bold uppercase tracking-wide hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">
+                        FİYATI DÜŞÜR
+                    </button>
 </div>
-<span class="text-xl font-bold">:</span>
-<div class="text-center">
-<span class="block text-xl font-bold font-headline">14</span>
-<span class="text-[10px] uppercase font-bold text-on-surface-variant">Saat</span>
-</div>
-<span class="text-xl font-bold">:</span>
-<div class="text-center">
-<span class="block text-xl font-bold font-headline">55</span>
-<span class="text-[10px] uppercase font-bold text-on-surface-variant">Dak</span>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-low rounded-xxl p-6 group cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative mb-6">
+<img alt="Retro Cam" class="w-full h-48 object-contain transition-transform group-hover:scale-110" data-alt="retro yellow instant camera front view on a minimalist surface clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQgXGh7kH_R1AYYN8HtC5uP_kODxEdHpmhrBaLG1ZFMxbIDSFMpgdFnCPwlxSY04xKW-2L6aAmnRT7fjgBvegLsOnV-KkW-tBnF9H8GCSRFYvdVeqoOq-UrJQSGYHNptnkbbE7vMp7F1Qy8FZ8ND82yzYZ53Jg56ttIPkvUA_1Y5swPUwv0QDw4aE4g0HITzBYQZJKtBYEE2jWLPLIvGqJRHFDIAakyjQ0w2U2tBvbYEVTS8Hq26ESMoQwosRnwc1RjqsNz177lHI"/>
+<div class="absolute bottom-0 right-0 glass-card px-3 py-1 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-bold text-on-surface">12:15:00</span>
 </div>
 </div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-bold text-xl mb-1">Retro Tech Cam</h3>
+<p class="text-on-surface-variant text-sm font-medium">Analog Keyfi</p>
 </div>
-<!-- Main Action -->
-<button class="w-full bg-primary hover:bg-primary-dim text-on-primary py-5 rounded-xl font-headline font-bold text-lg tracking-wide shadow-lg transition-all active:scale-[0.98] flex items-center justify-center gap-3" id="join-group-btn">
-                        GRUBA KATIL
-                        <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</main>
-<!-- SUCCESS MODAL (SCREEN_3) -->
-<div class="hidden fixed inset-0 z-[60] flex items-center justify-center px-4 overflow-hidden" id="success-modal">
-<!-- Backdrop -->
-<div class="absolute inset-0 bg-on-background/40 backdrop-blur-sm" id="modal-backdrop"></div>
-<!-- Modal Card -->
-<div class="relative bg-surface-container-lowest w-full max-w-md rounded-3xl overflow-hidden shadow-2xl transform transition-all animate-in fade-in zoom-in duration-300">
-<!-- Celebratory Top Visual -->
-<div class="h-48 relative bg-surface-container-low overflow-hidden flex items-center justify-center">
-<div class="absolute top-[-10%] left-[-10%] w-32 h-32 rounded-full bg-primary-container/20 blur-2xl"></div>
-<div class="absolute bottom-[-10%] right-[-10%] w-40 h-40 rounded-full bg-tertiary-container/20 blur-3xl"></div>
-<div class="relative flex items-center justify-center">
-<div class="absolute w-24 h-24 rounded-full border-4 border-primary/10 animate-ping"></div>
-<div class="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-xl shadow-primary/20">
-<span class="material-symbols-outlined text-on-primary text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="text-right">
+<p class="text-on-surface-variant line-through text-xs">₺2.100</p>
+<p class="text-primary text-2xl font-black">₺1.120</p>
 </div>
 </div>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-widest">
+<span>Katılımcılar: 1/3</span>
+<span>2 Kişi Lazım</span>
 </div>
-<!-- Content Area -->
-<div class="px-8 pt-8 pb-10 flex flex-col items-center text-center space-y-6">
-<div class="space-y-2">
-<h2 class="text-3xl font-bold font-headline text-on-background tracking-tight">Gruba başarıyla katıldın!</h2>
-<p class="text-on-surface-variant font-body leading-relaxed">
-                    Artık kolektifin bir parçasısın. Bu özel üretim fiyatının aktifleşmesine <span class="text-primary font-bold">58 üye</span> kaldı.
-                </p>
-</div>
-<!-- Action Buttons -->
-<div class="w-full flex flex-col space-y-3">
-<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-bold font-headline flex items-center justify-center space-x-2 hover:scale-[1.01] transition-transform active:opacity-90 shadow-lg shadow-primary/10" onclick="alert('Davet linki kopyalandı!')">
-<span class="material-symbols-outlined text-xl">share</span>
-<span>Arkadaşlarını Davet Et</span>
-</button>
-<button class="w-full py-4 text-primary font-bold font-headline hover:bg-surface-container-low rounded-xl transition-colors" id="continue-shopping-btn">
-                    Alışverişe Devam Et
-                </button>
-</div>
-<!-- Referral Perk Badge -->
-<div class="flex items-center space-x-3 bg-tertiary-container/10 px-4 py-3 rounded-2xl border border-tertiary/10">
-<span class="material-symbols-outlined text-tertiary">celebration</span>
-<span class="text-xs font-bold font-label text-tertiary uppercase tracking-wider text-left">Bir arkadaşını davet et, katıldığında 50$ mağaza kredisi kazan.</span>
+<div class="w-full bg-surface-container-highest h-3 rounded-sm overflow-hidden">
+<div class="bg-primary h-full w-1/3"></div>
 </div>
 </div>
-<!-- Close Action -->
-<button class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant hover:text-primary transition-colors" id="close-modal-btn">
-<span class="material-symbols-outlined">close</span>
-</button>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline font-bold uppercase tracking-wide hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">
+                        FİYATI DÜŞÜR
+                    </button>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-low rounded-xxl p-6 group cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative mb-6">
+<img alt="Headphones" class="w-full h-48 object-contain transition-transform group-hover:scale-110" data-alt="matte black high-end over-ear headphones in a moody artistic lighting shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtJp2mjfnRmP_9uLr4qZS4deivl3YTSmN007BZJ4seNnD6OwQcniIQA2FSgmqH7ekDg4HSiB3NeyW1mqC-SKjzMwM7TYSDtHLjM2kIERPDQNLe-3Lyh5CMX6IYSDUtuJQ6ceG6zbrKsBoV936dZKNyugQyOphFdDK81Gi_QSIa56qwe3DDQkplKGRwU7YNSms_WiuTeJE8vq5xUENPnyuh_eCbGCihMvzzjX-lBxXAc_FjKRRQ5_5nH2rIyM-QxwoADUnX97M78OA"/>
+<div class="absolute bottom-0 right-0 glass-card px-3 py-1 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-bold text-on-surface">01:05:44</span>
 </div>
 </div>
-<!-- Footer -->
-<footer class="w-full border-t border-[#e09c98]/15 bg-[#ffedeb] dark:bg-stone-900">
-<div class="w-full px-8 py-12 flex flex-col items-center text-center space-y-6">
-<div class="flex space-x-8">
-<a class="text-[#4e211f]/60 dark:text-stone-500 text-[10px] uppercase tracking-widest font-bold hover:text-[#4e211f] transition-opacity" href="#">Nasıl Çalışır?</a>
-<a class="text-[#4e211f]/60 dark:text-stone-500 text-[10px] uppercase tracking-widest font-bold hover:text-[#4e211f] transition-opacity" href="#">Kargo</a>
-<a class="text-[#4e211f]/60 dark:text-stone-500 text-[10px] uppercase tracking-widest font-bold hover:text-[#4e211f] transition-opacity" href="#">Şartlar</a>
-<a class="text-[#4e211f]/60 dark:text-stone-500 text-[10px] uppercase tracking-widest font-bold hover:text-[#4e211f] transition-opacity" href="#">Sürdürülebilirlik</a>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-bold text-xl mb-1">SoundMaster Pro</h3>
+<p class="text-on-surface-variant text-sm font-medium">HIFI Deneyimi</p>
 </div>
-<p class="text-[10px] uppercase tracking-widest font-medium text-[#4e211f]/60 max-w-2xl leading-relaxed">
-            © 2024 COLLECTIVE LUXURY. TÜM HAKLARI SAKLIDIR. ÖN TALEP GRUP ALIM MODELİ: ÜRÜNLER SADECE MİNİMUM SİPARİŞ ADEDİNE ULAŞILDIĞINDA ÜRETİLİR.
-        </p>
+<div class="text-right">
+<p class="text-on-surface-variant line-through text-xs">₺6.500</p>
+<p class="text-primary text-2xl font-black">₺3.400</p>
+</div>
+</div>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-widest">
+<span>Katılımcılar: 2/3</span>
+<span class="text-primary">Son Adım!</span>
+</div>
+<div class="w-full bg-surface-container-highest h-3 rounded-sm overflow-hidden">
+<div class="bg-primary h-full w-2/3"></div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline font-bold uppercase tracking-wide hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">
+                        FİYATI DÜŞÜR
+                    </button>
+</div>
+</div>
+</section>
+<!-- Trust Area -->
+<footer class="mt-20 py-12 border-t border-outline-variant/15 text-center">
+<div class="max-w-md mx-auto">
+<div class="flex justify-center gap-8 mb-6">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-2">verified_user</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Güvenli Talep</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-2">payments</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Ödeme Sonra</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-2">group</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Birlikte Güçlü</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm font-medium">
+                    Bu bir ön taleptir. Ürün hedeflenen katılımcı sayısına ulaşmadan <span class="text-primary font-bold">ödeme alınmaz.</span>
+</p>
+<div class="mt-8 text-on-surface/30 text-[10px] uppercase tracking-[0.3em] font-bold">
+                    Kolektif Lüks © 2024
+                </div>
 </div>
 </footer>
+</main>
 <!-- BottomNavBar (Mobile Only) -->
-<div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-2xl flex justify-around items-center px-6 py-4 shadow-[0_-8px_30px_rgb(78,33,31,0.08)]">
-<button class="flex flex-col items-center gap-1 text-[#af2700] font-bold" onclick="showPage('home')">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span>
-<span class="text-[10px] uppercase tracking-widest">Mağaza</span>
-</button>
-<button class="flex flex-col items-center gap-1 text-[#4e211f]/60">
-<span class="material-symbols-outlined">group</span>
-<span class="text-[10px] uppercase tracking-widest">Gruplar</span>
-</button>
-<button class="flex flex-col items-center gap-1 text-[#4e211f]/60">
-<span class="material-symbols-outlined">bolt</span>
-<span class="text-[10px] uppercase tracking-widest">Yeni</span>
-</button>
-<button class="flex flex-col items-center gap-1 text-[#4e211f]/60">
-<span class="material-symbols-outlined">person</span>
-<span class="text-[10px] uppercase tracking-widest">Profil</span>
-</button>
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 pt-2 px-4 bg-[#fff4f3]/70 backdrop-blur-xl z-50 border-t border-[#e09c98]/15 shadow-[0_-12px_40px_rgba(78,33,31,0.08)] rounded-t-3xl">
+<div class="flex flex-col items-center justify-center bg-[#af2700] text-white rounded-2xl px-5 py-2 scale-110 -translate-y-2 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">flash_on</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-widest mt-1">Keşfet</span>
 </div>
+<div class="flex flex-col items-center justify-center text-[#4e211f] opacity-60 px-4 py-2">
+<span class="material-symbols-outlined">workspace_premium</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-widest mt-1">En İyiler</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e211f] opacity-60 px-4 py-2">
+<span class="material-symbols-outlined">group</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-widest mt-1">Gruplarım</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e211f] opacity-60 px-4 py-2">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-widest mt-1">Profil</span>
+</div>
+</nav>
+<!-- Social Proof Notification (Fixed Bottom Left) -->
+<div class="fixed bottom-28 left-6 z-40 animate-bounce">
+<div class="bg-surface-container-lowest shadow-2xl rounded-full px-4 py-2 flex items-center gap-3 border border-primary/5">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container text-[10px] font-bold">AK</div>
+<div class="text-[10px]">
+<p class="font-bold text-on-surface">Ahmet katıldı!</p>
+<p class="text-on-surface-variant">2 saniye önce</p>
+</div>
+</div>
+</div>
+<!-- PRODUCT DETAIL MODAL (Hidden by default, used for interaction) -->
+<!-- Add 'hidden' to the class list below to hide. For the prototype, we leave it in the DOM ready for CSS toggles or manual interaction simulation. -->
+<div class="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-6 transition-all hidden" id="productModal">
+<div class="absolute inset-0 bg-on-background/40 backdrop-blur-sm" onclick="this.parentElement.classList.add('hidden')"></div>
+<div class="relative bg-surface w-full max-w-4xl h-[921px] sm:h-auto sm:rounded-xxl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+<button class="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center" onclick="document.getElementById('productModal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="w-full md:w-1/2 bg-surface-container-low p-8 flex items-center justify-center">
+<img alt="Detail View Product" class="w-full object-contain -rotate-12 drop-shadow-2xl" data-alt="extremely detailed macro shot of a designer red sneaker showing fabric texture and premium stitching minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaazG38hP2DX8oWCJGCv4rBo4x3jf5t6qXaq1b0oYV8zAK_8_P6_kvF-UdFhYVXoteL4tYeq7dcYkOYxjna3OCjk-2tb8svbTEebo1rk7FqOL8_Dj7W39GSvEA4DSiMoRjfGx18p5lES1zETk3vgrwLg_w4Xykv62IAbo95xxtbgX3HjDOlMTSvpNQqzL9dWw7_kqe5_bbps4-52FOylK9xAM5NW1eKvMWA7-EFF82_OItg2rKuu0SVP3IXVq3GQeD79eSbFMkPlk"/>
+</div>
+<div class="w-full md:w-1/2 p-8 lg:p-12 overflow-y-auto">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">Sınırlı Stok: 12 Adet</span>
+<h2 class="font-headline text-3xl font-black text-on-surface mb-4">Sneaker X Kolektif</h2>
+<div class="flex items-center gap-4 mb-8">
+<span class="text-4xl font-black text-primary">₺2.450</span>
+<span class="text-on-surface-variant line-through text-xl">₺4.800</span>
+<span class="bg-primary-container text-on-primary-container px-2 py-1 rounded-md text-xs font-bold">%49 İNDİRİM</span>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl mb-8">
+<div class="flex justify-between items-center mb-3">
+<span class="font-bold text-sm">Grup Durumu</span>
+<span class="text-primary font-black">2 / 3 KİŞİ</span>
+</div>
+<div class="w-full bg-surface-container-highest h-4 rounded-full overflow-hidden mb-3">
+<div class="bg-primary h-full w-2/3"></div>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">
+<span class="text-primary font-bold">Sadece 1 kişi daha</span> katılırsa fiyat düşecek ve siparişiniz onaylanacak!
+                    </p>
+</div>
+<div class="space-y-4">
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-headline font-black text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all" onclick="document.getElementById('successPopup').classList.remove('hidden')">
+                        GRUBA KATIL VE FİYATI DÜŞÜR
+                    </button>
+<p class="text-center text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">
+                        Katılım Ücretsiz • Ödeme Sipariş Onayında
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- SUCCESS POPUP (Hidden) -->
+<div class="fixed inset-0 z-[110] flex items-center justify-center p-6 hidden" id="successPopup">
+<div class="absolute inset-0 bg-on-background/80 backdrop-blur-md"></div>
+<div class="relative bg-surface-container-lowest max-w-sm w-full rounded-xxl p-8 text-center shadow-2xl">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline text-2xl font-black mb-2">🎉 Gruba katıldın!</h3>
+<p class="text-on-surface-variant mb-8">Fiyatın düşmesine sadece bir adım kaldı. Arkadaşlarını davet et, indirimi garantile!</p>
+<button class="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 mb-4 hover:opacity-90 transition-all">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-2.32 0-4.591.902-6.398 2.541l.001.001C3.812 10.36 2.87 12.673 2.87 15.111c0 2.374.887 4.607 2.496 6.309L4.033 24l2.646-1.332a9.124 9.124 0 0 0 5.352 1.503c2.31 0 4.582-.903 6.398-2.541 1.821-1.645 2.825-3.834 2.825-6.16 0-2.321-.902-4.592-2.541-6.398-1.636-1.815-3.824-2.825-6.151-2.903l-.531.002z"></path></svg>
+                WhatsApp ile Arkadaşlarını Çağır
+            </button>
+<button class="w-full py-4 text-on-surface-variant font-bold text-sm" onclick="location.reload()">Kapat</button>
+</div>
+</div>
+<!-- Script to simulate the detail view opening -->
 <script>
-    // State Management
-    function showPage(pageId) {
-        const home = document.getElementById('home-page');
-        const detail = document.getElementById('product-detail');
-        const modal = document.getElementById('success-modal');
-
-        // Close modal if open
-        modal.classList.add('hidden');
-
-        if (pageId === 'home') {
-            home.classList.remove('hidden');
-            detail.classList.add('hidden');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (pageId === 'detail') {
-            home.classList.add('hidden');
-            detail.classList.remove('hidden');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    }
-
-    function toggleModal(show) {
-        const modal = document.getElementById('success-modal');
-        if (show) {
-            modal.classList.remove('hidden');
-        } else {
-            modal.classList.add('hidden');
-        }
-    }
-
-    // Event Listeners
-    document.getElementById('logo-btn').addEventListener('click', () => showPage('home'));
-    document.getElementById('product-card-red').addEventListener('click', () => showPage('detail'));
-    document.getElementById('join-group-btn').addEventListener('click', () => toggleModal(true));
-    document.getElementById('close-modal-btn').addEventListener('click', () => toggleModal(false));
-    document.getElementById('continue-shopping-btn').addEventListener('click', () => toggleModal(false));
-    document.getElementById('modal-backdrop').addEventListener('click', () => toggleModal(false));
-</script>
+        document.querySelectorAll('.cursor-pointer').forEach(card => {
+            card.addEventListener('click', () => {
+                document.getElementById('productModal').classList.remove('hidden');
+            });
+        });
+    </script>
 </body></html>
