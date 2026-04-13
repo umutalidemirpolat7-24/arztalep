@@ -3,67 +3,68 @@
 <html class="scroll-smooth" lang="tr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>COLLECTIVE | Kolektif Lüks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "outline-variant": "#e09c98",
-                        "tertiary-container": "#ff9727",
-                        "secondary-fixed-dim": "#ffb09f",
-                        "inverse-primary": "#ff562c",
-                        "on-error": "#ffefee",
-                        "surface-variant": "#ffd2cf",
-                        "on-secondary-fixed": "#6a1000",
-                        "on-primary-container": "#490b00",
-                        "inverse-on-surface": "#ce8c88",
-                        "tertiary-fixed": "#ff9727",
-                        "surface-container-highest": "#ffd2cf",
-                        "surface-bright": "#fff4f3",
-                        "secondary-container": "#ffc4b7",
-                        "on-primary-fixed": "#000000",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary": "#b22100",
-                        "on-error-container": "#570008",
-                        "error-dim": "#9f0519",
-                        "on-background": "#4e211f",
-                        "surface-container-low": "#ffedeb",
-                        "on-tertiary-container": "#4c2700",
-                        "surface": "#fff4f3",
-                        "primary": "#af2700",
-                        "on-secondary-container": "#8d1800",
-                        "inverse-surface": "#240304",
-                        "on-surface-variant": "#834c4a",
-                        "surface-container-high": "#ffdad7",
-                        "on-surface": "#4e211f",
-                        "on-secondary-fixed-variant": "#9e1d00",
-                        "surface-tint": "#af2700",
-                        "primary-fixed-dim": "#ff5c34",
-                        "surface-dim": "#ffc7c3",
-                        "primary-dim": "#9a2100",
-                        "on-tertiary-fixed-variant": "#592f00",
-                        "on-tertiary-fixed": "#281200",
-                        "primary-fixed": "#ff7856",
                         "tertiary-dim": "#794200",
-                        "surface-container": "#ffe1df",
-                        "outline": "#a36764",
-                        "background": "#fff4f3",
-                        "secondary-fixed": "#ffc4b7",
-                        "tertiary-fixed-dim": "#f18900",
-                        "error-container": "#fb5151",
-                        "on-secondary": "#ffefec",
+                        "on-secondary-container": "#8d1800",
+                        "tertiary-fixed": "#ff9727",
                         "error": "#b31b25",
-                        "tertiary": "#8a4c00",
+                        "on-background": "#4e211f",
+                        "surface-tint": "#af2700",
+                        "surface-container-high": "#ffdad7",
+                        "surface-container-low": "#ffedeb",
+                        "tertiary-container": "#ff9727",
+                        "surface-variant": "#ffd2cf",
+                        "on-tertiary-fixed-variant": "#592f00",
                         "on-primary-fixed-variant": "#5a0f00",
+                        "surface-container": "#ffe1df",
+                        "on-secondary-fixed-variant": "#9e1d00",
+                        "on-secondary-fixed": "#6a1000",
+                        "secondary-fixed": "#ffc4b7",
+                        "primary-fixed": "#ff7856",
+                        "secondary-container": "#ffc4b7",
+                        "surface-bright": "#fff4f3",
                         "on-primary": "#ffefec",
-                        "primary-container": "#ff7856",
+                        "on-tertiary-fixed": "#281200",
+                        "inverse-primary": "#ff562c",
+                        "tertiary-fixed-dim": "#f18900",
+                        "surface": "#fff4f3",
+                        "secondary-fixed-dim": "#ffb09f",
                         "secondary-dim": "#9c1c00",
-                        "on-tertiary": "#fff0e6"
+                        "surface-dim": "#ffc7c3",
+                        "outline-variant": "#e09c98",
+                        "outline": "#a36764",
+                        "on-surface": "#4e211f",
+                        "primary-container": "#ff7856",
+                        "on-surface-variant": "#834c4a",
+                        "primary": "#af2700",
+                        "tertiary": "#8a4c00",
+                        "primary-fixed-dim": "#ff5c34",
+                        "on-primary-container": "#490b00",
+                        "on-tertiary": "#fff0e6",
+                        "primary-dim": "#9a2100",
+                        "inverse-surface": "#240304",
+                        "secondary": "#b22100",
+                        "on-secondary": "#ffefec",
+                        "inverse-on-surface": "#ce8c88",
+                        "on-primary-fixed": "#000000",
+                        "on-tertiary-container": "#4c2700",
+                        "on-error": "#ffefee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#570008",
+                        "surface-container-highest": "#ffd2cf",
+                        "error-dim": "#9f0519",
+                        "error-container": "#fb5151",
+                        "background": "#fff4f3"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -85,351 +86,329 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
         }
-        .kinetic-progress-track {
-            height: 6px;
-            background-color: #ffd2cf;
+        .kinetic-progress {
+            position: relative;
+            overflow: hidden;
         }
-        .kinetic-progress-indicator {
-            height: 100%;
-            background-color: #af2700;
+        .kinetic-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: progress-shine 2s infinite;
         }
-        .glass-panel {
-            background: rgba(255, 244, 243, 0.7);
-            backdrop-filter: blur(24px);
+        @keyframes progress-shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
         }
+        .notification-toast {
+            animation: toast-in-out 5s ease-in-out forwards;
+        }
+        @keyframes toast-in-out {
+            0% { transform: translateY(100%); opacity: 0; }
+            10% { transform: translateY(0); opacity: 1; }
+            90% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-20px); opacity: 0; }
+        }
+        .modal-open { overflow: hidden; }
+        .backdrop-blur-xl { backdrop-filter: blur(24px); }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<body class="bg-surface font-body text-on-surface">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fff4f3] dark:bg-stone-950 flex justify-between items-center px-6 py-4 max-w-7xl mx-auto left-0 right-0">
-<div class="text-xl font-black text-[#af2700] italic tracking-tighter uppercase font-headline">KOLEKTİF LÜKS</div>
+<nav class="fixed top-0 w-full z-50 bg-[#ffedeb] dark:bg-stone-900 shadow-[0_12px_40px_rgba(78,33,31,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#4e211f] dark:text-[#fff4f3] font-headline">COLLECTIVE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#af2700] font-bold font-headline transition-opacity hover:opacity-80" href="#">Drops</a>
+<a class="text-[#4e211f]/60 dark:text-[#fff4f3]/60 font-headline transition-opacity hover:opacity-80" href="#">Live Groups</a>
+<a class="text-[#4e211f]/60 dark:text-[#fff4f3]/60 font-headline transition-opacity hover:opacity-80" href="#">Archived</a>
+<a class="text-[#4e211f]/60 dark:text-[#fff4f3]/60 font-headline transition-opacity hover:opacity-80" href="#">Rewards</a>
+</div>
 <div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-[#af2700] dark:text-[#ff7856] hover:opacity-80 transition-opacity" data-icon="shopping_bag">shopping_bag</button>
-<button class="material-symbols-outlined text-[#af2700] dark:text-[#ff7856] hover:opacity-80 transition-opacity" data-icon="person">person</button>
+<button class="material-symbols-outlined text-[#af2700] hover:scale-95 duration-200 transition-transform" data-icon="notifications">notifications</button>
+<button class="material-symbols-outlined text-[#af2700] hover:scale-95 duration-200 transition-transform" data-icon="shopping_bag">shopping_bag</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary">
+<img alt="User profile" data-alt="close-up portrait of a stylish young man with a neutral expression and clean urban background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnejf-luF_-laSptY6eowhtuYzgbLHCDJq9XYBmtjzN-bEIXgmypl5x06EH9s12DMkwL3YUL4Q_9Z8beLeyVkX-vso83p9XjvXLyOQXPrFBxu33IclJsmDCBVgBN1mRrem_HCRdyx9ZhHJl_3HnShzlJxst4TGfq5lE8JRgT6L3EkqsrEya_dWmMEcMt4vRfe5T-Ax8sp2nrqOv68vRERHkYZUAG5-QUt32a1mKM-GXN_XgGl8zwvI1mhTw6nD5GmDxQAHiqKs_hY"/>
+</div>
+</div>
 </div>
 </nav>
-<!-- Hero Section -->
-<header class="relative pt-32 pb-16 px-6 overflow-hidden">
-<div class="max-w-7xl mx-auto text-center">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary rounded-full text-on-primary mb-6 animate-pulse">
-<span class="material-symbols-outlined text-sm" data-icon="local_fire_department">local_fire_department</span>
-<span class="font-label font-bold text-xs uppercase tracking-widest">Canlı Fırsat</span>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-6 max-w-screen-2xl mx-auto">
+<!-- Hero Section: Editorial Focus -->
+<section class="mb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<div class="lg:col-span-7">
+<span class="inline-block px-4 py-1 rounded-full bg-primary text-on-primary font-bold text-xs tracking-widest uppercase mb-4">Yeni Drop: Kinetic Series</span>
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-none mb-6">
+                    KOLEKTİF <br/> <span class="text-primary italic">LÜKS</span>
+</h1>
+<p class="text-xl max-w-lg text-on-surface-variant leading-relaxed">
+                    Arzuyu talebe dönüştürün. Grup olarak satın alın, lüksü demokratikleştirin. Sıradaki hedefinizde sadece birkaç kişi kaldı.
+                </p>
 </div>
-<h1 class="font-headline font-extrabold text-5xl md:text-8xl text-primary tracking-tighter leading-none mb-6">
-                🔥 SON 1 KİŞİ KALDI
-            </h1>
-<p class="font-body text-xl md:text-2xl text-on-background/80 max-w-2xl mx-auto mb-10">
-                Bugün <span class="font-bold text-primary">48 kişi</span> grubuna katıldı ve lüks ürünlere fabrika fiyatına ulaştı. 
-            </p>
-<div class="flex flex-wrap justify-center gap-4">
-<div class="flex -space-x-3">
-<img alt="" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="close up headshot of a smiling young person with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF9p49zqoz0CXct1gKmZ1bLrQ5-NPHKuqMDMJyUvAbgXF7_Ard5tY1TwMWAvL8oHP0nQM2pFKrvf5JWVOop2-omWfvJWQ9yrgtUPdN9f0OVzudDfhY_LGpCU2jOKI-NKwbFKI8o3UzGWL1djvSvgWcX8DUpKFgjjGTa1tUiWgJ63Kvuv9VucweiAeEik67alPQjSEvHEVdGC21IGhkeg8upcUwt-wY67ZQSlNAysh6J4yX7XtNpZqYiQ5F5SvHbfLQxJqMoshvigI"/>
-<img alt="" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="professional portrait of a creative professional with a warm friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBANfz1mk_aq4_VMTixca0yT9IglZ6r7NacMSjb7B1PbxOtHToOr1-wqmhoqdZbVwE39xzDQJggoZsWqmvJWKE-qnMwhjwL3_zlgM9iHB3GwxlfdVm6hE25nFhVZoQvPY9JgFL92Jnpl7OvK_SRNJFbr3C7lhDR371xd27oC53Tcb0_EqOq4oFQyJbdXMXOPApts3IVdcUgRvt6sNyQtDR2IOYROQo_VER2KzsARuXzpJ4Ml3qOOpvz7u8fmmCExVakPEncV1xaF74"/>
-<img alt="" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="lifestyle portrait of a young woman laughing in an urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrKTAwh2yAhIyAAIq0vEoQpffcLwGTQZstC51832qcPXoaI3p5SnsuSk3T0roUS01zx_rbfqcvkUWcLiTcacwg2EHyN-Bb6z-NmQJmp8QjVzsk22mCAofP8NjDBkxCVHFJaRRvYgLfKg9a8DGQtfGQDYcllhzpfAl63tx1gbMS-1tnDx9001cNtnzR1N2nLZWsVVmt5aqIY2Kiqw37cJbOP5P4P6ZMj4DG4hrImwVR0lwiD7xEXuPniyRR031tXlo7jyh1Dd-LEcA"/>
-<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold border-2 border-surface">+45</div>
+<div class="lg:col-span-5 relative">
+<div class="bg-surface-container-low rounded-3xl p-8 overflow-hidden aspect-video group">
+<img alt="Luxury Watch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="minimalist studio shot of a high-end luxury watch with a silver band on a warm sand colored background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBozqugyNrkTyOgUF8E6EaoIQLAji9GWYWc-uPJZPq_PxrHH5HTAzydhUSRhOiQ2hhzecb-hPGBpNvCKXwYE6KIIN-qe1ixnWtFMyvOK7RUYcI92nJun1JvFQy8I44YOkQKg9Mr62Qt61SPtw8KTWrN-Pu69RboZfV20A_XYncgZL65ncOvaGHBo_UMdLxvh8m-v6XlxXFhJGRhqgWf9Xab0ZaMW-CS7pjIvPM1tepGKrZaqgZY-_-22ObR83xuTiAvyhmpKVR9iHw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex justify-between items-center text-on-primary">
+<div>
+<p class="font-bold font-headline text-lg italic">Premium Chrono</p>
+<p class="text-sm opacity-90">Sadece 2 koltuk boş</p>
 </div>
-<span class="font-label text-sm self-center font-semibold text-on-surface/60">Şu an aktif 1.2k üye</span>
-</div>
-</div>
-</header>
-<!-- Product Grid -->
-<main class="max-w-7xl mx-auto px-6 py-12">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Card 1: AirPods Pro 2 -->
-<div class="group relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer shadow-sm">
-<div class="absolute top-4 left-4 z-10 bg-primary text-on-primary px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tighter animate-bounce">
-                    🚨 SON 1 KİŞİ
-                </div>
-<div class="relative mb-8 h-48 flex items-center justify-center">
-<img class="max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="Product shot of premium wireless white earbuds and charging case against a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpswqqfxhxL8eDtkYzStJQ_ddkve1D1WxvfovcHsKvHmFauJtsPfolclKPZjLvS4JyaZlT5DccLlsKrLKJ0FDz2pij3ey7pWiMK0nuU7uKQYt-yh53-wF213wcPBtkrgTUKvvGCLr3a-F6zzb8TZHdOXLeEQkM4C3ZGURhbnqN-hp58zddUlN1FmOKNPTSD4Ed5FkkofvYPmfe4XJdDwBouZ4hpoJHmQAuQHyA0nDgSwgzUiICJIoWfBfmlJtbNmxxsx5NZRr8rXQ"/>
-</div>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-bold text-lg leading-tight">AirPods Pro 2nd Gen</h3>
-<div class="text-right">
-<p class="font-label text-xs text-on-surface/50 line-through">₺9.999</p>
-<p class="font-headline font-black text-xl text-primary tracking-tight">₺5.499</p>
-</div>
-</div>
-<div class="space-y-1.5">
-<div class="flex justify-between text-[10px] font-bold font-label uppercase text-primary">
-<span>GRUP DOLULUĞU</span>
-<span>%90</span>
-</div>
-<div class="kinetic-progress-track rounded-full overflow-hidden">
-<div class="kinetic-progress-indicator w-[90%]"></div>
-</div>
-</div>
-<div class="flex items-center gap-2 py-2 border-y border-outline-variant/15">
-<span class="material-symbols-outlined text-primary text-sm" data-icon="visibility">visibility</span>
-<span class="text-[10px] font-bold font-label text-on-surface/70">7 KİŞİ ŞU AN İNCELİYOR</span>
-</div>
-<div class="flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
-<span class="text-xs font-bold font-label">04:12:59 KALDI</span>
+<span class="material-symbols-outlined text-4xl" data-icon="bolt">bolt</span>
 </div>
 </div>
 </div>
-<!-- Card 2: Stanley Quencher -->
-<div class="group relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer shadow-sm">
-<div class="absolute top-4 left-4 z-10 bg-primary text-on-primary px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tighter animate-bounce">
-                    🚨 SON 1 KİŞİ
-                </div>
-<div class="relative mb-8 h-48 flex items-center justify-center">
-<img class="max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="Modern high-quality insulated tumbler with straw in a contemporary cream color against minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH8wC6Z8xpfWTLKiGuxSNd1QdHaA78ccoBuZ8OczCgh0vAOiEwuJtpw0n-G8FPJ2QjTPftnhOQVkM7VBzNCndmI7OZF6xr_X6S2Gc2YOMgFFTtJZBH21ecEGRhhN7HVnu6beEpXpG7uCLdnonRt-uE0Yv_EX4VA-gG_ZNbXuEWf0f9lVBSzXJS_2d2Gg7IRAGi4W0V-UnCm5mt0_uz3_rH1J19Y4buwNld59MGt9fX_1dxMHvFokm8amHTPIXXUVlSMu9b_-j8hPE"/>
+</section>
+<!-- Product Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_1')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Red Sneakers" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" data-alt="dynamic floating view of bright red athletic sneakers with clean white details against a soft cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUfktues4jUMjIRmqG-lPMTpKsinDQ7LelhEphY1s2QvCNDOz5PstWmhb1MJhr8aMrfSnwkki7PxWRSexvp_7iBr47tFNsP-JFb1bkg_EnfydJKXZ55ELRM2CqY_SlSTauZ7VrA4syE3H9_0_6TcdkhfZcg5Q-JNCnT8Hlrl5ZfJTO1k8cR2a4K_F5pdz3xPjXERjHuUHWgX2kZuWcFHFFrk6xhSL2sF1vD9lCoCyo4gc6q1QnFaYh1TnzgUvDhxUtD0UeXkJ7KI"/>
+<div class="absolute top-0 right-0 bg-tertiary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Limited</div>
 </div>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-bold text-lg leading-tight">Stanley Quencher 1.2L</h3>
-<div class="text-right">
-<p class="font-label text-xs text-on-surface/50 line-through">₺2.199</p>
-<p class="font-headline font-black text-xl text-primary tracking-tight">₺1.249</p>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Aero Max 90 "Pulse"</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺4.250</span>
+<span class="text-sm line-through opacity-40">₺8.900</span>
 </div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="h-full bg-primary w-2/3"></div>
 </div>
-<div class="space-y-1.5">
-<div class="flex justify-between text-[10px] font-bold font-label uppercase text-primary">
-<span>GRUP DOLULUĞU</span>
-<span>%95</span>
-</div>
-<div class="kinetic-progress-track rounded-full overflow-hidden">
-<div class="kinetic-progress-indicator w-[95%]"></div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Sadece 1 kişi kaldı</p>
 </div>
 </div>
-<div class="flex items-center gap-2 py-2 border-y border-outline-variant/15">
-<span class="material-symbols-outlined text-primary text-sm" data-icon="visibility">visibility</span>
-<span class="text-[10px] font-bold font-label text-on-surface/70">12 KİŞİ ŞU AN İNCELİYOR</span>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_2')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Headphones" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-110" data-alt="professional studio shot of sleek black wireless headphones with golden accents floating on a warm beige background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFkmCiiRtHzTsuyG4U0WCPYPSEGjDsn03USjY8aa9-q0tt6MRL17s-HoNxjehrKb4-kp2dm6gK-tfJARl7G7adoUV48xJa07tqG-NTRmKYWIarkxg6jPQmEbmvHSOG1x-_oR4xVz4wUaRjAIcPXWzICYwXt5wgToojh2jLyRgRVvW9niMgCCZlYmhRmP2wePeqhDRpWSZ_QuoQmaHj3iEOL2AU3jWZAa5Rodct52qNmuvQsM6s4y55Ws8cUvIgOwtJSwLmRspa2Bw"/>
 </div>
-<div class="flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
-<span class="text-xs font-bold font-label">01:45:22 KALDI</span>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Sonic Studio Pro</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺12.900</span>
+<span class="text-sm line-through opacity-40">₺19.500</span>
 </div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="h-full bg-primary w-4/5"></div>
 </div>
-</div>
-<!-- Card 3: Dyson Airwrap -->
-<div class="group relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer shadow-sm">
-<div class="absolute top-4 left-4 z-10 bg-primary text-on-primary px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tighter animate-bounce">
-                    🚨 SON 1 KİŞİ
-                </div>
-<div class="relative mb-8 h-48 flex items-center justify-center">
-<img class="max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="High-end professional hair styling tool set in vibrant colors with various attachments on a clean surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLQycwzXHNqFkMbRrlJk0xKefPWzcnJziA-P4VBezAF-G5NBvxhyjI4fgLjjGJ2Vv1fDGnimDV3-L9yHOiNKp70K4pKWMHYxtOhtWPVCRP3BiJ_L-K6ZgR1UQitHSi53h9N2cje6cdyMU8Imkzacp6fOJUfUp9fS4EFVRhGuPWR_B1BXRV-A3EIjvZFcK96w-H4vWBmvjMa2JyuKjNWYk9AlNrG7H7f8ixCy4pDXGDUrwO9NlGu7LaEOTNFR-AWRrPn850HqrqqXY"/>
-</div>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-bold text-lg leading-tight">Dyson Airwrap Complete</h3>
-<div class="text-right">
-<p class="font-label text-xs text-on-surface/50 line-through">₺24.999</p>
-<p class="font-headline font-black text-xl text-primary tracking-tight">₺16.999</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Son koltuk</p>
 </div>
 </div>
-<div class="space-y-1.5">
-<div class="flex justify-between text-[10px] font-bold font-label uppercase text-primary">
-<span>GRUP DOLULUĞU</span>
-<span>%88</span>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_3')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Fragrance" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" data-alt="luxury perfume bottle with dark amber liquid and textured cap in dramatic side lighting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCszyGkMAIxthqW4TI40IIV2wBazC40t8swOIJl376Zce7T3wjg9Q7G_nFBPsGIoqOJTUl68c7y75uCZye3hGC7P84Y1jHK3h-VQw_2bTYe3djzs-WPB2ielAVFxYBjokT1yYyhwQmueNnWzgp6cYN2qVEmOnhwLMMdu7NPBZ8wCUggFQ5VNuJLvMEJzlng0OIXVl5FpxnFqGyZo5Pa3o7EimMmak0p1L6dMv5_TZ_qtJfY4n_0-4yePGCSVQn_BWmhcoqiJtR5oa4"/>
 </div>
-<div class="kinetic-progress-track rounded-full overflow-hidden">
-<div class="kinetic-progress-indicator w-[88%]"></div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Oud Noir Intense</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺2.100</span>
+<span class="text-sm line-through opacity-40">₺4.800</span>
 </div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="h-full bg-primary w-1/2"></div>
 </div>
-<div class="flex items-center gap-2 py-2 border-y border-outline-variant/15">
-<span class="material-symbols-outlined text-primary text-sm" data-icon="visibility">visibility</span>
-<span class="text-[10px] font-bold font-label text-on-surface/70">15 KİŞİ ŞU AN İNCELİYOR</span>
-</div>
-<div class="flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
-<span class="text-xs font-bold font-label">03:30:10 KALDI</span>
-</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Grup %50 Dolu</p>
 </div>
 </div>
-<!-- Card 4: Marshall Emberton II -->
-<div class="group relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer shadow-sm">
-<div class="absolute top-4 left-4 z-10 bg-primary text-on-primary px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tighter animate-bounce">
-                    🚨 SON 1 KİŞİ
-                </div>
-<div class="relative mb-8 h-48 flex items-center justify-center">
-<img class="max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="Classic portable speaker with vintage aesthetic and brass details on a dark sleek background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9JXMSb-VNL1XELN_dJ-jtWaXreH1qv5cBZQrHrc26je0bBpLJ7lDOtPtU_zOeDuK7bzeCasXl-ZVhO5I42Xu6_sEYmMrBgEhL8eb4XYa3lozWrM5rbPzWOU0n4jRCpw71KmzDrO87cYEON0a5L0dbIJXrktYW37en3fo2zb0OUIkvY1e7VsbFgIbboWVIrXlqtZs_ffiCFkjro6WBJNRd2EE5N1aHFWoNn5zrO3-4MtKmcnGnBWbF5Eape4Zw4w_El7MFw6m6ofo"/>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_4')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Instax Camera" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12" data-alt="retro polaroid camera in vibrant orange color on a minimal neutral surface with sharp focus and cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5SOQFkKSZWIXvziKrW1UemRURtGvvJxZHVTxSO612o30i3Fdvf-zkoe1lPsoB4ZO3MWnFHj15_IpA4uhmNj7gpKd6PsyrMBdMAfNXLGDRbFSj-l9EhSUSC8KFbjzYmV9EKI2yX18XZWcP-XBSBRGuQDekG8_1aY3PlpDCnIZibWZTf7SxVCiLknTZiUTgUKiFC_cS_sycc7BJE2T1kpAMwrKMLU4HXNsDEnIbGvDa7a575sJXwgx7-VQUq53ewFKGEvpzw4Oi4Vg"/>
 </div>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-bold text-lg leading-tight">Marshall Emberton II</h3>
-<div class="text-right">
-<p class="font-label text-xs text-on-surface/50 line-through">₺6.299</p>
-<p class="font-headline font-black text-xl text-primary tracking-tight">₺3.450</p>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Lomo Vista 400</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺1.850</span>
+<span class="text-sm line-through opacity-40">₺3.200</span>
 </div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="h-full bg-primary w-5/6"></div>
 </div>
-<div class="space-y-1.5">
-<div class="flex justify-between text-[10px] font-bold font-label uppercase text-primary">
-<span>GRUP DOLULUĞU</span>
-<span>%92</span>
-</div>
-<div class="kinetic-progress-track rounded-full overflow-hidden">
-<div class="kinetic-progress-indicator w-[92%]"></div>
-</div>
-</div>
-<div class="flex items-center gap-2 py-2 border-y border-outline-variant/15">
-<span class="material-symbols-outlined text-primary text-sm" data-icon="visibility">visibility</span>
-<span class="text-[10px] font-bold font-label text-on-surface/70">4 KİŞİ ŞU AN İNCELİYOR</span>
-</div>
-<div class="flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
-<span class="text-xs font-bold font-label">00:55:40 KALDI</span>
-</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Anlık 12 kişi bakıyor</p>
 </div>
 </div>
 </div>
 </main>
-<!-- Trust Footer -->
-<footer class="max-w-7xl mx-auto px-6 pt-16 pb-32">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center bg-surface-container p-8 rounded-3xl border border-outline-variant/10">
-<div class="space-y-3">
-<span class="material-symbols-outlined text-3xl text-primary" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-<h4 class="font-headline font-bold text-on-surface uppercase tracking-tight text-sm">GÜVENLİ KATILIM</h4>
-<p class="font-body text-xs text-on-surface/60">Ödeme hemen alınmaz, grup tamamlanınca yetkilendirme yapılır.</p>
+<!-- Notification Stream Container -->
+<div class="fixed bottom-24 left-6 z-[60] w-72 pointer-events-none space-y-2" id="notification-container">
+<!-- Notifications injected here -->
 </div>
-<div class="space-y-3 border-y md:border-y-0 md:border-x border-outline-variant/10 py-8 md:py-0">
-<span class="material-symbols-outlined text-3xl text-primary" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span>
-<h4 class="font-headline font-bold text-on-surface uppercase tracking-tight text-sm">KOLEKTİF GÜÇ</h4>
-<p class="font-body text-xs text-on-surface/60">Doğrudan markadan toptan fiyatına alım yapılır.</p>
-</div>
-<div class="space-y-3">
-<span class="material-symbols-outlined text-3xl text-primary" data-icon="local_shipping" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
-<h4 class="font-headline font-bold text-on-surface uppercase tracking-tight text-sm">ÜCRETSİZ KARGO</h4>
-<p class="font-body text-xs text-on-surface/60">Grup tamamlandıktan 24 saat sonra kargoya verilir.</p>
-</div>
-</div>
-</footer>
-<!-- Sticky CTA -->
-<div class="fixed bottom-0 left-0 w-full z-40 p-4 flex justify-center pointer-events-none md:hidden">
-<button class="pointer-events-auto w-full max-w-sm bg-primary text-on-primary font-headline font-black py-4 rounded-2xl shadow-2xl flex items-center justify-center gap-3 active:scale-95 transition-transform">
-            HEMEN KATIL
-            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<!-- Main Product Modal -->
+<div class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4" id="productModal">
+<div class="absolute inset-0 bg-on-background/40 backdrop-blur-xl" onclick="closeModal()"></div>
+<div class="relative bg-surface rounded-[2rem] w-full max-w-4xl max-h-[921px] overflow-hidden flex flex-col md:flex-row shadow-[0_40px_100px_rgba(0,0,0,0.3)] animate-modal-scale">
+<!-- Close Button -->
+<button class="absolute top-6 right-6 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container shadow-lg hover:bg-primary-container transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined">close</span>
 </button>
+<!-- Image Side -->
+<div class="md:w-1/2 bg-surface-container-low p-12 flex items-center justify-center">
+<img alt="Selected Product" class="w-full h-auto object-contain drop-shadow-2xl" data-alt="High resolution product photography of a luxury consumer item, centered on a neutral background with studio lighting." id="modalImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRXezp95NIVoBqWJokZZ9Tjl-nQkmolFoqKGlDT7RPaTBqvPwosBYDUH-IohDznUC71RhdoK68Kps_APo37ENu586xuyY4GSnD0WJ5xs7ubLNHYPVNtvZMtnBLujeY71qUHx6EnW1MLQJuKFfI2VNUezMuPE1TUm7SbL3Gm3EJ8qLvMAQG-gTlbVS41mLSl-unbMjj7QP20NM303MIzWbUHR2_vu0BT3QCIqAxUGh7va99977bhKadE2T3MAV7aw82fg59a9I-BYc"/>
 </div>
-<!-- Live Stream Notifications (Right Corner) -->
-<div class="fixed bottom-32 right-6 z-50 flex flex-col gap-3 pointer-events-none">
-<div class="glass-panel flex items-center gap-3 p-3 rounded-2xl shadow-xl border border-white/20 animate-fade-in-up">
-<img class="w-8 h-8 rounded-full" data-alt="close up headshot of a smiling young person with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGeLqLVcd6UT3kfBRC5MOjuFJDg2wGB7N0_20sNlyuYAe1BtrssCtgT-tO7tamnBWaSrWShuYpaEdgy36SYuXfb2TFuyCkxHoug_Sk8TpstuNnb4OsxAu6QByo0BVXM0c5hXR-_0C241ssTx9UYZ0xc7XMal6I1DfQew9PcwIGWcdf_ce8uZdABeAIc1_BKF-NNJI96nQHHRT0FwVpDXoIrNU1SaaEm1JsmfJOJRAS9xzjvAaxreZ27tEcchi8yvZB5Xukv3dShtc"/>
-<div>
-<p class="text-[10px] font-bold text-on-surface leading-none">Ahmet az önce katıldı</p>
-<p class="text-[9px] font-label text-primary font-bold">Dyson Airwrap Grubu</p>
+<!-- Content Side -->
+<div class="md:w-1/2 p-8 md:p-12 overflow-y-auto">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">visibility</span>
+<span class="text-xs font-bold font-label uppercase tracking-tighter text-primary">7 kişi şu an bu gruba bakıyor</span>
 </div>
-</div>
-<div class="glass-panel flex items-center gap-3 p-3 rounded-2xl shadow-xl border border-white/20">
-<img class="w-8 h-8 rounded-full" data-alt="professional portrait of a creative professional with a warm friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHjF1tu6wuzXCNw48py2lnzx8mA30dHQzW7268MhI389ColdsLG6V5_4OGY1HMcZWnFyNAoYSBg3gGgWyWWXdsCFZjScrenymp4i7koaltC8-1aO0WekP7avZwUJOJQNQZJSv-BjYn_1t-aXnQZIO8hZSZuGrrCEYQ_EyN81SdXDoB_sTmNeuGPIv7BRMNyeAiqgFx_TS6RF7Mo0v85ztTQ5RWI67efRlSaZ8AW4NNg575nUJIQrkH-90M6JeA3FuvAJ0D4uiPkew"/>
-<div>
-<p class="text-[10px] font-bold text-on-surface leading-none">Selin şu an bakıyor</p>
-<p class="text-[9px] font-label text-on-surface/50">Marshall Emberton II</p>
-</div>
-</div>
-</div>
-<!-- PRODUCT DETAIL PANEL (MODAL MOCKUP - INVISIBLE BY DEFAULT) -->
-<div class="fixed inset-0 z-[100] bg-black/40 backdrop-blur-sm flex items-end md:items-center justify-center p-0 md:p-6 opacity-0 pointer-events-none transition-opacity">
-<div class="bg-surface w-full max-w-4xl max-h-[921px] overflow-y-auto rounded-t-3xl md:rounded-3xl shadow-2xl relative translate-y-20 transition-transform">
-<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
-<span class="material-symbols-outlined" data-icon="close">close</span>
-</button>
-<div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-<div class="space-y-6">
-<img class="w-full aspect-square object-contain bg-surface-container-low rounded-2xl" data-alt="Clear high-definition product photo of electronic accessories in a professional studio setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbnfxRpyDAhfwzRJrOSWxFMBvAmdElR-7dU40lulSGp3oVZ6Gm6lqzPM6j7aCYyyPYrVwqMtJPGtAkc4k4DzqvYCyhxusbafD6Gd4mAJskDpWTOJE6QWvC1ogqRL39iDBc_0df1xHgMALpdKrxSqGNCLf2N4L5bZnBNSbIiGOF_uocwilQ3kAZw6cPWRhec4Rz9zBZrfLnZvVyzWwG4napbPELV3PhFMSAeS5G2k36-vsglwbe45ZuXmrl-XKqkUejt_czbSFtLt4"/>
-<div class="grid grid-cols-4 gap-2">
-<div class="bg-surface-container-low rounded-lg aspect-square border-2 border-primary"></div>
-<div class="bg-surface-container-low rounded-lg aspect-square"></div>
-<div class="bg-surface-container-low rounded-lg aspect-square"></div>
-<div class="bg-surface-container-low rounded-lg aspect-square"></div>
+<h2 class="text-4xl font-black font-headline tracking-tighter mb-4 leading-tight" id="modalTitle">Aero Max 90 "Pulse"</h2>
+<div class="space-y-1 mb-8">
+<span class="text-sm text-on-surface-variant font-medium line-through">Normal Fiyat: ₺8.900</span>
+<div class="flex items-center gap-3">
+<span class="text-5xl font-black text-primary font-headline">₺4.250</span>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded tracking-widest uppercase">-%52 Tasarruf</span>
 </div>
 </div>
-<div class="flex flex-col justify-between py-4">
-<div class="space-y-6">
-<div>
-<h2 class="font-headline font-black text-3xl text-on-surface tracking-tighter">AirPods Pro 2nd Gen</h2>
-<p class="font-body text-on-surface/60 mt-1">Sınırlı Stok • Marka Garantili • Kapalı Kutu</p>
+<div class="bg-surface-container rounded-2xl p-6 mb-8">
+<div class="flex justify-between items-end mb-3">
+<span class="text-sm font-bold font-headline italic">Grup İlerlemesi</span>
+<span class="text-xs font-mono font-bold text-primary" id="countdown">02:14:55</span>
+</div>
+<div class="w-full h-4 bg-surface-container-highest rounded-full overflow-hidden kinetic-progress">
+<div class="h-full bg-primary w-2/3 transition-all duration-1000"></div>
+</div>
+<div class="flex justify-between items-center mt-3">
+<p class="text-sm font-bold text-on-surface">Sadece 1 kişi kaldı</p>
+<p class="text-xs text-on-surface-variant">Hedef: 3 Kişi</p>
+</div>
 </div>
 <div class="space-y-4">
-<h4 class="font-label font-bold text-xs uppercase tracking-widest text-on-surface/40">FİYAT KADEMELERİ</h4>
-<div class="space-y-2">
-<div class="flex justify-between items-center p-3 rounded-xl bg-surface-container border border-outline-variant/20">
-<span class="text-xs font-bold font-headline">1-2 Kişi</span>
-<span class="text-sm font-black text-on-surface/40">₺8.499</span>
-</div>
-<div class="flex justify-between items-center p-4 rounded-xl bg-primary/5 border-2 border-primary">
-<div class="flex items-center gap-2">
-<span class="text-sm font-bold font-headline text-primary">3+ Kişi (GÜNCEL)</span>
-<span class="bg-primary text-on-primary text-[8px] px-1.5 py-0.5 rounded font-black uppercase">EN İYİ FİYAT</span>
-</div>
-<span class="text-xl font-black text-primary tracking-tight">₺5.499</span>
+<button class="w-full bg-primary text-on-primary py-5 rounded-2xl font-black font-headline text-lg tracking-tight hover:shadow-[0_12px_40px_rgba(175,39,0,0.4)] transition-all active:scale-95" onclick="showSuccess()">
+                        GRUBA KATIL VE FİYATI DÜŞÜR
+                    </button>
+<p class="text-[10px] text-center text-on-surface-variant font-bold uppercase tracking-widest px-8">Katıldığınızda kartınızdan sadece grup tamamlandığında çekim yapılır.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-low p-5 rounded-2xl border border-primary/20">
-<div class="flex justify-between items-center mb-3">
-<span class="font-headline font-bold text-sm text-primary">SON KİŞİ SEN OL!</span>
-<span class="font-label font-bold text-xs text-primary">9/10</span>
 </div>
-<div class="kinetic-progress-track rounded-full overflow-hidden mb-4">
-<div class="kinetic-progress-indicator w-[90%]"></div>
+<!-- Success Modal -->
+<div class="fixed inset-0 z-[110] hidden flex items-center justify-center p-4" id="successModal">
+<div class="absolute inset-0 bg-on-background/60 backdrop-blur-md"></div>
+<div class="relative bg-surface rounded-[2.5rem] p-10 max-w-md w-full text-center shadow-[0_40px_100px_rgba(0,0,0,0.5)]">
+<div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-on-primary">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
 </div>
-<p class="text-[10px] text-center font-body text-on-surface/70 leading-relaxed uppercase tracking-wider">
-                                GRUP TAMAMLANDIĞINDA BU FİYAT KİLİTLENECEKTİR. <br/>Hemen yerini ayır, son fırsatı kaçırma!
-                            </p>
+<h2 class="text-3xl font-black font-headline tracking-tighter mb-4 leading-tight">🎉 Yerin Ayrıldı!</h2>
+<p class="text-lg mb-8 text-on-surface-variant">Sadece 1 kişi daha katıldığında bu ürün senin olacak. Arkadaşlarını çağır, süreci hızlandır!</p>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<button class="bg-[#25D366] text-white py-4 rounded-xl flex items-center justify-center gap-2 font-bold hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">share</span> WhatsApp
+                </button>
+<button class="bg-surface-container py-4 rounded-xl flex items-center justify-center gap-2 font-bold hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">link</span> Kopyala
+                </button>
 </div>
-</div>
-<button class="mt-8 w-full bg-primary text-on-primary font-headline font-black py-5 rounded-2xl shadow-xl flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-95 transition-all">
-                        SON KİŞİ OLARAK KATIL
-                        <span class="material-symbols-outlined" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
-</button>
-</div>
-</div>
+<button class="text-sm font-bold text-on-surface-variant hover:text-primary underline underline-offset-4" onclick="closeSuccess()">Daha Sonra</button>
 </div>
 </div>
 <!-- BottomNavBar (Mobile Only) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#fff4f3]/70 backdrop-blur-xl flex justify-around items-center px-4 pt-3 pb-8 z-50 border-t border-[#e09c98]/15 shadow-[0_-12px_40px_rgba(78,33,31,0.08)] rounded-t-3xl">
-<div class="flex flex-col items-center justify-center text-[#af2700] scale-110">
-<span class="material-symbols-outlined" data-icon="local_mall" style="font-variation-settings: 'FILL' 1;">local_mall</span>
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fff4f3]/70 backdrop-blur-3xl border-t border-[#e09c98]/15 shadow-[0_-12px_40px_rgba(78,33,31,0.08)]">
+<button class="flex flex-col items-center justify-center bg-[#af2700] text-white rounded-2xl p-3 hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="storefront" style="font-variation-settings: 'FILL' 1;">storefront</span>
 <span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Shop</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#4e211f]/60">
-<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#4e211f]/50 p-3 hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
 <span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Groups</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#4e211f]/60">
-<span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span>
-<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Activity</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#4e211f]/60">
+</button>
+<button class="flex flex-col items-center justify-center text-[#4e211f]/50 p-3 hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Alerts</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#4e211f]/50 p-3 hover:scale-110 transition-transform active:scale-90">
 <span class="material-symbols-outlined" data-icon="person">person</span>
-<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Account</span>
-</div>
+<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</button>
 </nav>
-<!-- EXIT INTENT OVERLAY (MOCKUP - INVISIBLE) -->
-<div class="fixed inset-0 z-[200] bg-primary/95 backdrop-blur-xl flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity">
-<div class="max-w-xl text-center text-on-primary">
-<span class="material-symbols-outlined text-8xl mb-6" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
-<h2 class="font-headline font-black text-4xl md:text-6xl tracking-tighter mb-4 uppercase">BU FIRSAT KAPANIYOR!</h2>
-<p class="font-body text-xl opacity-80 mb-10 leading-relaxed">Sen ayrılırken AirPods Pro grubu için son kişi bekleniyor. Sadece 1 dakikan var!</p>
-<div class="flex flex-col gap-4">
-<button class="bg-on-primary text-primary font-headline font-black py-5 px-10 rounded-2xl shadow-2xl uppercase tracking-tighter">
-                    FIRSATI YAKALA
-                </button>
-<button class="font-label font-bold text-sm underline opacity-60">Şansımı kaybetmek istiyorum</button>
-</div>
-</div>
-</div>
-<!-- SUCCESS MODAL (MOCKUP - INVISIBLE) -->
-<div class="fixed inset-0 z-[300] bg-black/80 backdrop-blur-md flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity">
-<div class="bg-surface max-w-md w-full p-8 rounded-3xl text-center shadow-2xl">
-<div class="w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
-<span class="material-symbols-outlined text-4xl" data-icon="celebration">celebration</span>
-</div>
-<h2 class="font-headline font-black text-3xl text-on-surface mb-2">🎉 Yerin Ayrıldı!</h2>
-<p class="font-body text-on-surface/60 mb-8">Seninle birlikte grup 10/10 doluluğa ulaştı. Fiyatın kesinleşti!</p>
-<div class="space-y-4">
-<p class="font-label font-bold text-[10px] uppercase text-on-surface/40 tracking-widest">PAYLAŞ VE EKSTRA İNDİRİM KAZAN</p>
-<button class="w-full bg-[#25D366] text-white font-headline font-black py-4 rounded-2xl flex items-center justify-center gap-3 shadow-lg active:scale-95 transition-transform">
-<span class="material-symbols-outlined" data-icon="share">share</span>
-                    WHATSAPP'TA PAYLAŞ
-                </button>
-<p class="text-[10px] text-on-surface/40 leading-tight">Arkadaşın katılırsa bir sonraki siparişinde ₺500 indirim kazanırsın.</p>
-</div>
-</div>
-</div>
+<script>
+        // Modal Logic
+        function openModal(prodId) {
+            const modal = document.getElementById('productModal');
+            document.body.classList.add('modal-open');
+            modal.classList.remove('hidden');
+            
+            // Map fake data for the demo
+            const data = {
+                'prod_1': { title: 'Aero Max 90 "Pulse"', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800' },
+                'prod_2': { title: 'Sonic Studio Pro', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800' },
+                'prod_3': { title: 'Oud Noir Intense', img: 'https://images.unsplash.com/photo-1585333120167-081824d74d4a?auto=format&fit=crop&q=80&w=800' },
+                'prod_4': { title: 'Lomo Vista 400', img: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&q=80&w=800' }
+            };
+
+            document.getElementById('modalTitle').innerText = data[prodId].title;
+            document.getElementById('modalImg').src = data[prodId].img;
+        }
+
+        function closeModal() {
+            document.getElementById('productModal').classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+
+        function showSuccess() {
+            document.getElementById('productModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('hidden');
+        }
+
+        function closeSuccess() {
+            document.getElementById('successModal').classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+
+        // Notification System
+        const notifications = [
+            "Ahmet az önce katıldı",
+            "Merve bir grubu tamamladı",
+            "Bu ürün için son 1 koltuk kaldı",
+            "Burak sepetini gruba dönüştürdü",
+            "Canan indirimden ₺450 tasarruf etti",
+            "Ece az önce grubu paylaştı"
+        ];
+
+        function spawnNotification() {
+            const container = document.getElementById('notification-container');
+            const text = notifications[Math.floor(Math.random() * notifications.length)];
+            
+            const toast = document.createElement('div');
+            toast.className = "notification-toast bg-surface-container-lowest shadow-xl border-l-4 border-primary p-4 rounded-xl flex items-center gap-3";
+            toast.innerHTML = `
+                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                </div>
+                <p class="text-xs font-bold text-on-surface">${text}</p>
+            `;
+            
+            container.appendChild(toast);
+            setTimeout(() => toast.remove(), 5500);
+        }
+
+        // Random intervals for stream
+        setInterval(spawnNotification, 8000);
+        setTimeout(spawnNotification, 2000); // Initial one
+
+        // Simple Countdown logic
+        function updateTimer() {
+            const timerEl = document.getElementById('countdown');
+            if(timerEl) {
+                let time = timerEl.innerText.split(':');
+                let seconds = (+time[0]) * 60 * 60 + (+time[1]) * 60 + (+time[2]);
+                seconds--;
+                let h = Math.floor(seconds / 3600).toString().padStart(2, '0');
+                let m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+                let s = (seconds % 60).toString().padStart(2, '0');
+                timerEl.innerText = `${h}:${m}:${s}`;
+            }
+        }
+        setInterval(updateTimer, 1000);
+    </script>
 </body></html>
