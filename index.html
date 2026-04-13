@@ -7,7 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -118,6 +117,11 @@
         }
         .modal-open { overflow: hidden; }
         .backdrop-blur-xl { backdrop-filter: blur(24px); }
+        .animate-modal-scale { animation: modal-scale 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        @keyframes modal-scale {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface">
@@ -135,14 +139,14 @@
 <button class="material-symbols-outlined text-[#af2700] hover:scale-95 duration-200 transition-transform" data-icon="notifications">notifications</button>
 <button class="material-symbols-outlined text-[#af2700] hover:scale-95 duration-200 transition-transform" data-icon="shopping_bag">shopping_bag</button>
 <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary">
-<img alt="User profile" data-alt="close-up portrait of a stylish young man with a neutral expression and clean urban background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnejf-luF_-laSptY6eowhtuYzgbLHCDJq9XYBmtjzN-bEIXgmypl5x06EH9s12DMkwL3YUL4Q_9Z8beLeyVkX-vso83p9XjvXLyOQXPrFBxu33IclJsmDCBVgBN1mRrem_HCRdyx9ZhHJl_3HnShzlJxst4TGfq5lE8JRgT6L3EkqsrEya_dWmMEcMt4vRfe5T-Ax8sp2nrqOv68vRERHkYZUAG5-QUt32a1mKM-GXN_XgGl8zwvI1mhTw6nD5GmDxQAHiqKs_hY"/>
+<img alt="User profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnejf-luF_-laSptY6eowhtuYzgbLHCDJq9XYBmtjzN-bEIXgmypl5x06EH9s12DMkwL3YUL4Q_9Z8beLeyVkX-vso83p9XjvXLyOQXPrFBxu33IclJsmDCBVgBN1mRrem_HCRdyx9ZhHJl_3HnShzlJxst4TGfq5lE8JRgT6L3EkqsrEya_dWmMEcMt4vRfe5T-Ax8sp2nrqOv68vRERHkYZUAG5-QUt32a1mKM-GXN_XgGl8zwvI1mhTw6nD5GmDxQAHiqKs_hY"/>
 </div>
 </div>
 </div>
 </nav>
 <!-- Main Content Canvas -->
 <main class="pt-24 pb-32 px-6 max-w-screen-2xl mx-auto">
-<!-- Hero Section: Editorial Focus -->
+<!-- Hero Section -->
 <section class="mb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
 <div class="lg:col-span-7">
 <span class="inline-block px-4 py-1 rounded-full bg-primary text-on-primary font-bold text-xs tracking-widest uppercase mb-4">Yeni Drop: Kinetic Series</span>
@@ -155,7 +159,7 @@
 </div>
 <div class="lg:col-span-5 relative">
 <div class="bg-surface-container-low rounded-3xl p-8 overflow-hidden aspect-video group">
-<img alt="Luxury Watch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="minimalist studio shot of a high-end luxury watch with a silver band on a warm sand colored background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBozqugyNrkTyOgUF8E6EaoIQLAji9GWYWc-uPJZPq_PxrHH5HTAzydhUSRhOiQ2hhzecb-hPGBpNvCKXwYE6KIIN-qe1ixnWtFMyvOK7RUYcI92nJun1JvFQy8I44YOkQKg9Mr62Qt61SPtw8KTWrN-Pu69RboZfV20A_XYncgZL65ncOvaGHBo_UMdLxvh8m-v6XlxXFhJGRhqgWf9Xab0ZaMW-CS7pjIvPM1tepGKrZaqgZY-_-22ObR83xuTiAvyhmpKVR9iHw"/>
+<img alt="Luxury Watch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBozqugyNrkTyOgUF8E6EaoIQLAji9GWYWc-uPJZPq_PxrHH5HTAzydhUSRhOiQ2hhzecb-hPGBpNvCKXwYE6KIIN-qe1ixnWtFMyvOK7RUYcI92nJun1JvFQy8I44YOkQKg9Mr62Qt61SPtw8KTWrN-Pu69RboZfV20A_XYncgZL65ncOvaGHBo_UMdLxvh8m-v6XlxXFhJGRhqgWf9Xab0ZaMW-CS7pjIvPM1tepGKrZaqgZY-_-22ObR83xuTiAvyhmpKVR9iHw"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6 flex justify-between items-center text-on-primary">
 <div>
@@ -169,10 +173,10 @@
 </section>
 <!-- Product Bento Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-<!-- Product Card 1 -->
+<!-- Product Card 1: Aero Max -->
 <div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_1')">
 <div class="relative h-64 mb-6 overflow-visible">
-<img alt="Red Sneakers" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" data-alt="dynamic floating view of bright red athletic sneakers with clean white details against a soft cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUfktues4jUMjIRmqG-lPMTpKsinDQ7LelhEphY1s2QvCNDOz5PstWmhb1MJhr8aMrfSnwkki7PxWRSexvp_7iBr47tFNsP-JFb1bkg_EnfydJKXZ55ELRM2CqY_SlSTauZ7VrA4syE3H9_0_6TcdkhfZcg5Q-JNCnT8Hlrl5ZfJTO1k8cR2a4K_F5pdz3xPjXERjHuUHWgX2kZuWcFHFFrk6xhSL2sF1vD9lCoCyo4gc6q1QnFaYh1TnzgUvDhxUtD0UeXkJ7KI"/>
+<img alt="Red Sneakers" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUfktues4jUMjIRmqG-lPMTpKsinDQ7LelhEphY1s2QvCNDOz5PstWmhb1MJhr8aMrfSnwkki7PxWRSexvp_7iBr47tFNsP-JFb1bkg_EnfydJKXZ55ELRM2CqY_SlSTauZ7VrA4syE3H9_0_6TcdkhfZcg5Q-JNCnT8Hlrl5ZfJTO1k8cR2a4K_F5pdz3xPjXERjHuUHWgX2kZuWcFHFFrk6xhSL2sF1vD9lCoCyo4gc6q1QnFaYh1TnzgUvDhxUtD0UeXkJ7KI"/>
 <div class="absolute top-0 right-0 bg-tertiary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Limited</div>
 </div>
 <div class="space-y-2">
@@ -181,16 +185,17 @@
 <span class="text-2xl font-black text-primary font-headline">₺4.250</span>
 <span class="text-sm line-through opacity-40">₺8.900</span>
 </div>
-<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
 <div class="h-full bg-primary w-2/3"></div>
 </div>
-<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Sadece 1 kişi kaldı</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🚨 SON 1 KİŞİ</p>
 </div>
 </div>
-<!-- Product Card 2 -->
+<!-- Product Card 2: Sonic Studio -->
 <div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_2')">
 <div class="relative h-64 mb-6 overflow-visible">
-<img alt="Headphones" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-110" data-alt="professional studio shot of sleek black wireless headphones with golden accents floating on a warm beige background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFkmCiiRtHzTsuyG4U0WCPYPSEGjDsn03USjY8aa9-q0tt6MRL17s-HoNxjehrKb4-kp2dm6gK-tfJARl7G7adoUV48xJa07tqG-NTRmKYWIarkxg6jPQmEbmvHSOG1x-_oR4xVz4wUaRjAIcPXWzICYwXt5wgToojh2jLyRgRVvW9niMgCCZlYmhRmP2wePeqhDRpWSZ_QuoQmaHj3iEOL2AU3jWZAa5Rodct52qNmuvQsM6s4y55Ws8cUvIgOwtJSwLmRspa2Bw"/>
+<img alt="Headphones" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFkmCiiRtHzTsuyG4U0WCPYPSEGjDsn03USjY8aa9-q0tt6MRL17s-HoNxjehrKb4-kp2dm6gK-tfJARl7G7adoUV48xJa07tqG-NTRmKYWIarkxg6jPQmEbmvHSOG1x-_oR4xVz4wUaRjAIcPXWzICYwXt5wgToojh2jLyRgRVvW9niMgCCZlYmhRmP2wePeqhDRpWSZ_QuoQmaHj3iEOL2AU3jWZAa5Rodct52qNmuvQsM6s4y55Ws8cUvIgOwtJSwLmRspa2Bw"/>
+<div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Popüler</div>
 </div>
 <div class="space-y-2">
 <h3 class="text-xl font-bold font-headline">Sonic Studio Pro</h3>
@@ -198,51 +203,187 @@
 <span class="text-2xl font-black text-primary font-headline">₺12.900</span>
 <span class="text-sm line-through opacity-40">₺19.500</span>
 </div>
-<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
 <div class="h-full bg-primary w-4/5"></div>
 </div>
 <p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Son koltuk</p>
 </div>
 </div>
-<!-- Product Card 3 -->
-<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_3')">
+<!-- New Product 1: Kindle Paperwhite -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('kindle')">
 <div class="relative h-64 mb-6 overflow-visible">
-<img alt="Fragrance" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" data-alt="luxury perfume bottle with dark amber liquid and textured cap in dramatic side lighting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCszyGkMAIxthqW4TI40IIV2wBazC40t8swOIJl376Zce7T3wjg9Q7G_nFBPsGIoqOJTUl68c7y75uCZye3hGC7P84Y1jHK3h-VQw_2bTYe3djzs-WPB2ielAVFxYBjokT1yYyhwQmueNnWzgp6cYN2qVEmOnhwLMMdu7NPBZ8wCUggFQ5VNuJLvMEJzlng0OIXVl5FpxnFqGyZo5Pa3o7EimMmak0p1L6dMv5_TZ_qtJfY4n_0-4yePGCSVQn_BWmhcoqiJtR5oa4"/>
+<img alt="Kindle Paperwhite" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuW6XnYgHvCyd88-r3rKydwHHJ3sWWquye61xPPGowBfEVorql9gahO5r5-3mA6w4IqOPQvVSe1s-VNHEV4UjpWNe1orstU7s9-N4eKaF8bAo4HMjs0kPKvLo0nM0-ajk_eI90yquRAKkhH_RwQfCBtcLomUpea47ruTU37WcUKTYa00_Wp8GrQvj9Ft4gFX_tbDKIC0f0SgIeRPx_iWQEcSq9ySFs6d4I1uJikzieRTx_gHPpDcRNvngTVDXEJ0rSQNR9jXIrCT4"/>
 </div>
 <div class="space-y-2">
-<h3 class="text-xl font-bold font-headline">Oud Noir Intense</h3>
+<h3 class="text-xl font-bold font-headline">Kindle Paperwhite</h3>
 <div class="flex items-baseline gap-2">
-<span class="text-2xl font-black text-primary font-headline">₺2.100</span>
-<span class="text-sm line-through opacity-40">₺4.800</span>
+<span class="text-2xl font-black text-primary font-headline">₺3.450</span>
+<span class="text-sm line-through opacity-40">₺5.200</span>
 </div>
-<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🔥 POPÜLER</p>
+</div>
+</div>
+<!-- New Product 2: Marshall Stanmore III -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('marshall')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Marshall Speaker" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQoSs95uaxX8Mo2MGH4uRx-A7Mp6503zA9_rWMknopEFYjdsloGxPQGRatTIWX0QT1bLgqJ1U_GRm9sN4dWfM7RBtzbiSvMdCDudu9z3uSmUEbcKgOJ9mzF2ClrEinnx_kzgRB2zeuiuwPcWA82W_8XgvSx3wNDDsBSyjxSBFBq1VEV-TZgvqMV6UJSDEnA3XNn8bQdbo51Q5si-Ge4FehEg5WdhcwikRvLYS8uq2xnZ42NmPGIgKzXZj98zzTvXrw2_-Z77XheYk"/>
+<div class="absolute top-0 right-0 bg-tertiary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Premium</div>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Marshall Stanmore III</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺14.800</span>
+<span class="text-sm line-through opacity-40">₺22.000</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🚨 SON 2 KİŞİ</p>
+</div>
+</div>
+<!-- New Product 3: Nespresso Vertuo -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('nespresso')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Coffee Machine" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYLN2PT7GfgjtabmqL1reyfmTmVaTagpoW2LdeimG_8uPObzglD5b3HNdRf0fWLFlne--zRHzJ_e1HgKOz634j-MBW4wQqyjk1UX-OSb5I-Of0_HQS8zWJli51dpns9OhgtI5061JroMy3PTtU7Lsblp-t9yQO5kliunN1NuOM6KiBno5LFB1Dh990CizVXrzstJu49UiAUp0UuRprZApmeSiG5HvzyCch53yQIXlpkpuT2YXe_ohLr96DV4oz4GjEJqXlNBFpTQM"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Nespresso Vertuo</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺5.100</span>
+<span class="text-sm line-through opacity-40">₺8.500</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
 <div class="h-full bg-primary w-1/2"></div>
 </div>
 <p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Grup %50 Dolu</p>
 </div>
 </div>
-<!-- Product Card 4 -->
-<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('prod_4')">
+<!-- New Product 4: Air Jordan 1 -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('jordan')">
 <div class="relative h-64 mb-6 overflow-visible">
-<img alt="Instax Camera" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12" data-alt="retro polaroid camera in vibrant orange color on a minimal neutral surface with sharp focus and cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5SOQFkKSZWIXvziKrW1UemRURtGvvJxZHVTxSO612o30i3Fdvf-zkoe1lPsoB4ZO3MWnFHj15_IpA4uhmNj7gpKd6PsyrMBdMAfNXLGDRbFSj-l9EhSUSC8KFbjzYmV9EKI2yX18XZWcP-XBSBRGuQDekG8_1aY3PlpDCnIZibWZTf7SxVCiLknTZiUTgUKiFC_cS_sycc7BJE2T1kpAMwrKMLU4HXNsDEnIbGvDa7a575sJXwgx7-VQUq53ewFKGEvpzw4Oi4Vg"/>
+<img alt="Nike Air Jordan" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj0vNm7BZEiis37hSYoOQ0lPmmS_yz3DuVkrdcTpnqIYiutovOwMND_EerzUjpTCpxzub-Gvsut3x06V1tt69cV1L-YxP9qkc5d-rDcst-xgSLgX4Yc5GvDZPiG_SRjm_BTEhy5NSBOGjhRYMhhJbJcrnIMBMtnuPleGgpxSWly2v31-dW8blMTlcn1JyqOC1COUXi2dhkY73VxIE3dSSrZz7Mtuz_JWlwO6usvblr5KsUynxgg4AnnbXGMnDhKAjAYhsajrwywkw"/>
 </div>
 <div class="space-y-2">
-<h3 class="text-xl font-bold font-headline">Lomo Vista 400</h3>
+<h3 class="text-xl font-bold font-headline">AJ1 "Lost &amp; Found"</h3>
 <div class="flex items-baseline gap-2">
-<span class="text-2xl font-black text-primary font-headline">₺1.850</span>
-<span class="text-sm line-through opacity-40">₺3.200</span>
+<span class="text-2xl font-black text-primary font-headline">₺7.200</span>
+<span class="text-sm line-through opacity-40">₺12.400</span>
 </div>
-<div class="w-full h-1.5 bg-surface-container-highest mt-4">
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
 <div class="h-full bg-primary w-5/6"></div>
 </div>
-<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Anlık 12 kişi bakıyor</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🚨 SON 1 KİŞİ</p>
+</div>
+</div>
+<!-- New Product 5: Fujifilm Instax -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('instax')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Instax Mini" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0u5zPBSFbbxV4h_xl5AxXs7CfnVytdDpUNeheOOXycSBgRq5NCWNs4g4Rpc8n9jEt5dghtWFx9Rmsjbr3OWNLqJ5f4w6236IPBL6ZrodIy1S01eKJ-fJAUriVMSI78ehGE6FFVaQYTEqPX9nkrayKE825EK_rdtN6ANzaGXkZdjpO7Y3yRwFsOtq7H35nTad-n0DJ9BE_pUDvw4HbjYVshs0dUyqldn5sIu30-p_6GHZfRYylg5bbTQ9UCp2eSzXKf1FWsoLIRkM"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Instax Mini 12</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺1.950</span>
+<span class="text-sm line-through opacity-40">₺3.100</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🔥 POPÜLER</p>
+</div>
+</div>
+<!-- New Product 6: Foreo Luna -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('foreo')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Foreo Luna" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6W4Bmhj2AFW2P4xlF95ij6WHnlq4G5If9q1uAZ15Lkqhv4pRKE4hQYnNiixB7WUGLuMx314zmw63tsZLLklDcLBHWt8tAS9kltxruPSSwCzG5UcRZeYcFGqd6o-WJKtcFxXyeQfp7veJ0WPH2krtAPQfc5kh6LrKkc4Vpdm1ZqLH0Lr3O5viCrQK-t-GKSeDLMJ4kGDqvvYJqOvmlM3_6BITUY9R5A93LRlcTX4NIACcM5S6WIz_8_zPZPQPcjG4ZFqOSe7dZe7w"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Foreo Luna 4</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺4.800</span>
+<span class="text-sm line-through opacity-40">₺7.200</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/4"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Grup Başladı</p>
+</div>
+</div>
+<!-- New Product 7: PS5 Controller -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('ps5')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="DualSense Edge" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC2W3CkAIjjagQuI1ewowos0VLgJ-qH4OACw0ObtVDH_mgjHr9VvbTAFpkrHoEFaqT8g0I2hpQnMNcYAVNkS4hLiWMz7a8qKGFwXhI4ZD032UECATV7syWl_orHfGCw6DznA1OSMWjLsg2WZdxPOv2s_vOwVvOPwKEPC9RvdvKMHmo0BzWN7kj-mbwZTkQ3MgDf2KPmoS3c6HJiYy5vLWvvyOtZ5x5LfBETfaIWIbZX7FrnVdevWI8NQjPyMtoUEDRlFxhmLW5vXg"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">DualSense Edge</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺6.900</span>
+<span class="text-sm line-through opacity-40">₺10.500</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🚨 SON 1 KİŞİ</p>
+</div>
+</div>
+<!-- New Product 8: Yeti Rambler -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('yeti')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Yeti Rambler" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYJNNN7Ub4dTS6_NZbdFkZAWvzg8BYxNMMeQLJL81fsUDiUYfg31i_ZI__N2ORvV1pHsp-Y7jTm-K3hckMnCkiQ8eSqzkTPTjXC7HYSwpfVNp0nUXNTRBs5FD8a2zNamB95wmK-6ucUnVkRFfclrnsWUR5DiV5iFZkVTmpCqa7YWz3YoAYvEQT2n-kAlPt-QhDx2Scu-MixTGXmRUAi5idkq40Byu9eVexevum5FKR5SQdOCns4TDkBpbcNM1RD30pRGlll3-PRJs"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Yeti Rambler Tumbler</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺1.400</span>
+<span class="text-sm line-through opacity-40">₺2.100</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🔥 POPÜLER</p>
+</div>
+</div>
+<!-- New Product 9: Ray-Ban -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('rayban')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="Ray-Ban Wayfarer" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpYRiQezsJGNjsUCBtGw6TBHxlvFwXKXcnsRnJnoCKZYzrAd0ZQA_-Ktzpq-hQeB7XCw2o1cepPaQoysvhsqbgeI5cpCsMPknprdNirhv-gqU2i6-EGc9CIIadOwke3ExCJxYLkcO3EHR_JN0duvRORurjNSD_W3qEtAI-WzF2qaBehXAGFpoyuobpx0iU3EJ441kcsI7lWAjSVspqopHpn0B-nr522O3XDHLc_4iAbdcRUN0Qamwmf2i_J3a5IzHmSw3QmDpLnhU"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">Wayfarer Classic</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺3.900</span>
+<span class="text-sm line-through opacity-40">₺6.200</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">Grup %33 Dolu</p>
+</div>
+</div>
+<!-- New Product 10: GoPro -->
+<div class="group cursor-pointer relative bg-surface-container-low rounded-3xl p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)] hover:-translate-y-2" onclick="openModal('gopro')">
+<div class="relative h-64 mb-6 overflow-visible">
+<img alt="GoPro HERO12" class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcEfiClY9gn7wz8tChV-aGWo-0orxa5zQfC8luOM6ulBwBWy2aU9rf4JASRWao39jO07FbGbJw2PTtqv0FcONHPlrZLUm-rwbKLWlqr48xu2-C7p_g1EnPMPyHlO0L_iiZ8YzEt98q8NV3DIHvj9PJW8S3C-C17T5YqubphemVUNjjQlu74gxTRjJ0S3EgCytgvH8yldp3uP85Nc10oFWr_pKEK0H_C_xwolUDxogCx3I74jlLAkjQT5_h9ZNqdvcF3MWQcUZVw88"/>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold font-headline">GoPro HERO12 Black</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-primary font-headline">₺13.500</span>
+<span class="text-sm line-through opacity-40">₺19.900</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest mt-4 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary pt-2">🚨 SON 2 KİŞİ</p>
 </div>
 </div>
 </div>
 </main>
 <!-- Notification Stream Container -->
 <div class="fixed bottom-24 left-6 z-[60] w-72 pointer-events-none space-y-2" id="notification-container">
-<!-- Notifications injected here -->
 </div>
 <!-- Main Product Modal -->
 <div class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4" id="productModal">
@@ -254,20 +395,20 @@
 </button>
 <!-- Image Side -->
 <div class="md:w-1/2 bg-surface-container-low p-12 flex items-center justify-center">
-<img alt="Selected Product" class="w-full h-auto object-contain drop-shadow-2xl" data-alt="High resolution product photography of a luxury consumer item, centered on a neutral background with studio lighting." id="modalImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRXezp95NIVoBqWJokZZ9Tjl-nQkmolFoqKGlDT7RPaTBqvPwosBYDUH-IohDznUC71RhdoK68Kps_APo37ENu586xuyY4GSnD0WJ5xs7ubLNHYPVNtvZMtnBLujeY71qUHx6EnW1MLQJuKFfI2VNUezMuPE1TUm7SbL3Gm3EJ8qLvMAQG-gTlbVS41mLSl-unbMjj7QP20NM303MIzWbUHR2_vu0BT3QCIqAxUGh7va99977bhKadE2T3MAV7aw82fg59a9I-BYc"/>
+<img alt="Selected Product" class="w-full h-auto max-h-[400px] object-contain drop-shadow-2xl" id="modalImg" src=""/>
 </div>
 <!-- Content Side -->
 <div class="md:w-1/2 p-8 md:p-12 overflow-y-auto">
 <div class="flex items-center gap-2 mb-4">
 <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">visibility</span>
-<span class="text-xs font-bold font-label uppercase tracking-tighter text-primary">7 kişi şu an bu gruba bakıyor</span>
+<span class="text-xs font-bold font-label uppercase tracking-tighter text-primary">Az önce biri katıldı! 7 kişi şu an bakıyor</span>
 </div>
 <h2 class="text-4xl font-black font-headline tracking-tighter mb-4 leading-tight" id="modalTitle">Aero Max 90 "Pulse"</h2>
 <div class="space-y-1 mb-8">
-<span class="text-sm text-on-surface-variant font-medium line-through">Normal Fiyat: ₺8.900</span>
+<span class="text-sm text-on-surface-variant font-medium line-through" id="modalOldPrice">Normal Fiyat: ₺8.900</span>
 <div class="flex items-center gap-3">
-<span class="text-5xl font-black text-primary font-headline">₺4.250</span>
-<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded tracking-widest uppercase">-%52 Tasarruf</span>
+<span class="text-5xl font-black text-primary font-headline" id="modalPrice">₺4.250</span>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded tracking-widest uppercase">Grup İndirimi</span>
 </div>
 </div>
 <div class="bg-surface-container rounded-2xl p-6 mb-8">
@@ -276,11 +417,11 @@
 <span class="text-xs font-mono font-bold text-primary" id="countdown">02:14:55</span>
 </div>
 <div class="w-full h-4 bg-surface-container-highest rounded-full overflow-hidden kinetic-progress">
-<div class="h-full bg-primary w-2/3 transition-all duration-1000"></div>
+<div class="h-full bg-primary transition-all duration-1000" id="modalProgress" style="width: 66%;"></div>
 </div>
 <div class="flex justify-between items-center mt-3">
-<p class="text-sm font-bold text-on-surface">Sadece 1 kişi kaldı</p>
-<p class="text-xs text-on-surface-variant">Hedef: 3 Kişi</p>
+<p class="text-sm font-bold text-on-surface" id="modalStatusText">Sadece 1 kişi kaldı</p>
+<p class="text-xs text-on-surface-variant">Hedef: 3-5 Kişi</p>
 </div>
 </div>
 <div class="space-y-4">
@@ -300,7 +441,7 @@
 <span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
 </div>
 <h2 class="text-3xl font-black font-headline tracking-tighter mb-4 leading-tight">🎉 Yerin Ayrıldı!</h2>
-<p class="text-lg mb-8 text-on-surface-variant">Sadece 1 kişi daha katıldığında bu ürün senin olacak. Arkadaşlarını çağır, süreci hızlandır!</p>
+<p class="text-lg mb-8 text-on-surface-variant">Sadece birkaç kişi daha katıldığında bu ürün senin olacak. Arkadaşlarını çağır, süreci hızlandır!</p>
 <div class="grid grid-cols-2 gap-4 mb-4">
 <button class="bg-[#25D366] text-white py-4 rounded-xl flex items-center justify-center gap-2 font-bold hover:opacity-90 transition-opacity">
 <span class="material-symbols-outlined">share</span> WhatsApp
@@ -315,39 +456,52 @@
 <!-- BottomNavBar (Mobile Only) -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fff4f3]/70 backdrop-blur-3xl border-t border-[#e09c98]/15 shadow-[0_-12px_40px_rgba(78,33,31,0.08)]">
 <button class="flex flex-col items-center justify-center bg-[#af2700] text-white rounded-2xl p-3 hover:scale-110 transition-transform active:scale-90">
-<span class="material-symbols-outlined" data-icon="storefront" style="font-variation-settings: 'FILL' 1;">storefront</span>
-<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Shop</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="font-bold text-[10px] uppercase tracking-widest mt-1">Shop</span>
 </button>
 <button class="flex flex-col items-center justify-center text-[#4e211f]/50 p-3 hover:scale-110 transition-transform active:scale-90">
-<span class="material-symbols-outlined" data-icon="groups">groups</span>
-<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Groups</span>
+<span class="material-symbols-outlined">groups</span>
+<span class="font-bold text-[10px] uppercase tracking-widest mt-1">Groups</span>
 </button>
 <button class="flex flex-col items-center justify-center text-[#4e211f]/50 p-3 hover:scale-110 transition-transform active:scale-90">
-<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
-<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Alerts</span>
+<span class="material-symbols-outlined">notifications</span>
+<span class="font-bold text-[10px] uppercase tracking-widest mt-1">Alerts</span>
 </button>
 <button class="flex flex-col items-center justify-center text-[#4e211f]/50 p-3 hover:scale-110 transition-transform active:scale-90">
-<span class="material-symbols-outlined" data-icon="person">person</span>
-<span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Profile</span>
+<span class="material-symbols-outlined">person</span>
+<span class="font-bold text-[10px] uppercase tracking-widest mt-1">Profile</span>
 </button>
 </nav>
 <script>
-        // Modal Logic
+        const productsData = {
+            'prod_1': { title: 'Aero Max 90 "Pulse"', price: '₺4.250', old: '₺8.900', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCPUfktues4jUMjIRmqG-lPMTpKsinDQ7LelhEphY1s2QvCNDOz5PstWmhb1MJhr8aMrfSnwkki7PxWRSexvp_7iBr47tFNsP-JFb1bkg_EnfydJKXZ55ELRM2CqY_SlSTauZ7VrA4syE3H9_0_6TcdkhfZcg5Q-JNCnT8Hlrl5ZfJTO1k8cR2a4K_F5pdz3xPjXERjHuUHWgX2kZuWcFHFFrk6xhSL2sF1vD9lCoCyo4gc6q1QnFaYh1TnzgUvDhxUtD0UeXkJ7KI', progress: '66%', status: 'Sadece 1 kişi kaldı' },
+            'prod_2': { title: 'Sonic Studio Pro', price: '₺12.900', old: '₺19.500', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDFkmCiiRtHzTsuyG4U0WCPYPSEGjDsn03USjY8aa9-q0tt6MRL17s-HoNxjehrKb4-kp2dm6gK-tfJARl7G7adoUV48xJa07tqG-NTRmKYWIarkxg6jPQmEbmvHSOG1x-_oR4xVz4wUaRjAIcPXWzICYwXt5wgToojh2jLyRgRVvW9niMgCCZlYmhRmP2wePeqhDRpWSZ_QuoQmaHj3iEOL2AU3jWZAa5Rodct52qNmuvQsM6s4y55Ws8cUvIgOwtJSwLmRspa2Bw', progress: '80%', status: 'Son koltuk' },
+            'kindle': { title: 'Kindle Paperwhite', price: '₺3.450', old: '₺5.200', img: 'https://images.unsplash.com/photo-1592434134753-a70baf7979d7?auto=format&fit=crop&q=80&w=800', progress: '33%', status: '2 koltuk boş' },
+            'marshall': { title: 'Marshall Stanmore III', price: '₺14.800', old: '₺22.000', img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&q=80&w=800', progress: '66%', status: 'Sadece 2 kişi kaldı' },
+            'nespresso': { title: 'Nespresso Vertuo', price: '₺5.100', old: '₺8.500', img: 'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&q=80&w=800', progress: '50%', status: 'Grup %50 Dolu' },
+            'jordan': { title: 'AJ1 "Lost & Found"', price: '₺7.200', old: '₺12.400', img: 'https://images.unsplash.com/photo-1597043530272-086ca1b06e9b?auto=format&fit=crop&q=80&w=800', progress: '85%', status: '🚨 SON 1 KİŞİ' },
+            'instax': { title: 'Instax Mini 12', price: '₺1.950', old: '₺3.100', img: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&q=80&w=800', progress: '75%', status: '🔥 POPÜLER' },
+            'foreo': { title: 'Foreo Luna 4', price: '₺4.800', old: '₺7.200', img: 'https://images.unsplash.com/photo-1610484826967-09c5720778c7?auto=format&fit=crop&q=80&w=800', progress: '25%', status: '3 koltuk boş' },
+            'ps5': { title: 'DualSense Edge', price: '₺6.900', old: '₺10.500', img: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&q=80&w=800', progress: '66%', status: '🚨 SON 1 KİŞİ' },
+            'yeti': { title: 'Yeti Rambler Tumbler', price: '₺1.400', old: '₺2.100', img: 'https://images.unsplash.com/photo-1574786198875-49f5d09fe2d2?auto=format&fit=crop&q=80&w=800', progress: '75%', status: '🔥 POPÜLER' },
+            'rayban': { title: 'Wayfarer Classic', price: '₺3.900', old: '₺6.200', img: 'https://images.unsplash.com/photo-1511499767390-a739039759d4?auto=format&fit=crop&q=80&w=800', progress: '33%', status: '4 koltuk boş' },
+            'gopro': { title: 'GoPro HERO12 Black', price: '₺13.500', old: '₺19.900', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&q=80&w=800', progress: '66%', status: '🚨 SON 2 KİŞİ' }
+        };
+
         function openModal(prodId) {
+            const data = productsData[prodId];
+            if(!data) return;
+
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalImg').src = data.img;
+            document.getElementById('modalPrice').innerText = data.price;
+            document.getElementById('modalOldPrice').innerText = "Normal Fiyat: " + data.old;
+            document.getElementById('modalProgress').style.width = data.progress;
+            document.getElementById('modalStatusText').innerText = data.status;
+
             const modal = document.getElementById('productModal');
             document.body.classList.add('modal-open');
             modal.classList.remove('hidden');
-            
-            // Map fake data for the demo
-            const data = {
-                'prod_1': { title: 'Aero Max 90 "Pulse"', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800' },
-                'prod_2': { title: 'Sonic Studio Pro', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800' },
-                'prod_3': { title: 'Oud Noir Intense', img: 'https://images.unsplash.com/photo-1585333120167-081824d74d4a?auto=format&fit=crop&q=80&w=800' },
-                'prod_4': { title: 'Lomo Vista 400', img: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&q=80&w=800' }
-            };
-
-            document.getElementById('modalTitle').innerText = data[prodId].title;
-            document.getElementById('modalImg').src = data[prodId].img;
         }
 
         function closeModal() {
@@ -365,44 +519,41 @@
             document.body.classList.remove('modal-open');
         }
 
-        // Notification System
         const notifications = [
             "Ahmet az önce katıldı",
             "Merve bir grubu tamamladı",
             "Bu ürün için son 1 koltuk kaldı",
             "Burak sepetini gruba dönüştürdü",
             "Canan indirimden ₺450 tasarruf etti",
-            "Ece az önce grubu paylaştı"
+            "Ece az önce grubu paylaştı",
+            "Sinem %40 indirim kazandı",
+            "Kaan bir grubu başlattı"
         ];
 
         function spawnNotification() {
             const container = document.getElementById('notification-container');
             const text = notifications[Math.floor(Math.random() * notifications.length)];
-            
             const toast = document.createElement('div');
-            toast.className = "notification-toast bg-surface-container-lowest shadow-xl border-l-4 border-primary p-4 rounded-xl flex items-center gap-3";
+            toast.className = "notification-toast bg-surface-container-lowest shadow-xl border-l-4 border-primary p-4 rounded-xl flex items-center gap-3 pointer-events-auto";
             toast.innerHTML = `
-                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
                 </div>
                 <p class="text-xs font-bold text-on-surface">${text}</p>
             `;
-            
             container.appendChild(toast);
             setTimeout(() => toast.remove(), 5500);
         }
 
-        // Random intervals for stream
         setInterval(spawnNotification, 8000);
-        setTimeout(spawnNotification, 2000); // Initial one
+        setTimeout(spawnNotification, 2000);
 
-        // Simple Countdown logic
         function updateTimer() {
             const timerEl = document.getElementById('countdown');
             if(timerEl) {
                 let time = timerEl.innerText.split(':');
-                let seconds = (+time[0]) * 60 * 60 + (+time[1]) * 60 + (+time[2]);
-                seconds--;
+                let seconds = (+time[0]) * 3600 + (+time[1]) * 60 + (+time[2]);
+                if(seconds > 0) seconds--;
                 let h = Math.floor(seconds / 3600).toString().padStart(2, '0');
                 let m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
                 let s = (seconds % 60).toString().padStart(2, '0');
