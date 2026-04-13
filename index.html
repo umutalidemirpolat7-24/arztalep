@@ -3,436 +3,469 @@
 <html class="light" lang="tr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kolektif Lüks | Lüksü Birlikte Keşfedin</title>
+<title>Kolektif Lüks | Premium Grup Alışverişi</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-surface": "#4e211f",
-                    "inverse-on-surface": "#ce8c88",
-                    "surface-container": "#ffe1df",
-                    "on-secondary-fixed-variant": "#9e1d00",
-                    "on-primary-fixed-variant": "#5a0f00",
-                    "surface-dim": "#ffc7c3",
-                    "surface-bright": "#fff4f3",
-                    "primary-container": "#ff7856",
-                    "surface-container-high": "#ffdad7",
-                    "on-tertiary-fixed": "#281200",
-                    "tertiary": "#8a4c00",
-                    "on-surface-variant": "#834c4a",
-                    "error": "#b31b25",
-                    "on-secondary-fixed": "#6a1000",
-                    "tertiary-fixed-dim": "#f18900",
-                    "primary": "#af2700",
-                    "background": "#fff4f3",
-                    "surface-tint": "#af2700",
-                    "primary-fixed": "#ff7856",
-                    "surface-variant": "#ffd2cf",
-                    "on-tertiary": "#fff0e6",
-                    "outline": "#a36764",
-                    "secondary-fixed": "#ffc4b7",
-                    "on-error-container": "#570008",
-                    "on-primary-container": "#490b00",
-                    "secondary-fixed-dim": "#ffb09f",
-                    "on-tertiary-container": "#4c2700",
-                    "primary-dim": "#9a2100",
-                    "inverse-primary": "#ff562c",
-                    "surface": "#fff4f3",
-                    "surface-container-low": "#ffedeb",
-                    "on-primary-fixed": "#000000",
-                    "surface-container-highest": "#ffd2cf",
-                    "on-secondary": "#ffefec",
-                    "tertiary-fixed": "#ff9727",
-                    "tertiary-dim": "#794200",
-                    "error-container": "#fb5151",
-                    "on-tertiary-fixed-variant": "#592f00",
-                    "secondary": "#b22100",
-                    "on-background": "#4e211f",
-                    "primary-fixed-dim": "#ff5c34",
-                    "surface-container-lowest": "#ffffff",
-                    "inverse-surface": "#240304",
-                    "on-error": "#ffefee",
-                    "secondary-dim": "#9c1c00",
-                    "on-primary": "#ffefec",
-                    "error-dim": "#9f0519",
-                    "tertiary-container": "#ff9727",
-                    "secondary-container": "#ffc4b7",
-                    "outline-variant": "#e09c98",
-                    "on-secondary-container": "#8d1800"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#834c4a",
+                        "on-primary": "#ffefec",
+                        "surface-variant": "#ffd2cf",
+                        "error-container": "#fb5151",
+                        "on-tertiary-container": "#4c2700",
+                        "on-background": "#4e211f",
+                        "on-error": "#ffefee",
+                        "on-secondary-fixed": "#6a1000",
+                        "background": "#fff4f3",
+                        "on-secondary-fixed-variant": "#9e1d00",
+                        "outline": "#a36764",
+                        "tertiary-fixed": "#ff9727",
+                        "on-tertiary-fixed": "#281200",
+                        "primary-fixed": "#ff7856",
+                        "error": "#b31b25",
+                        "tertiary-fixed-dim": "#f18900",
+                        "on-tertiary-fixed-variant": "#592f00",
+                        "secondary-fixed-dim": "#ffb09f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fff4f3",
+                        "surface-container": "#ffe1df",
+                        "on-primary-container": "#490b00",
+                        "inverse-surface": "#240304",
+                        "surface-tint": "#af2700",
+                        "surface-container-low": "#ffedeb",
+                        "tertiary-container": "#ff9727",
+                        "secondary-fixed": "#ffc4b7",
+                        "inverse-on-surface": "#ce8c88",
+                        "on-secondary-container": "#8d1800",
+                        "on-primary-fixed": "#000000",
+                        "secondary-container": "#ffc4b7",
+                        "primary-fixed-dim": "#ff5c34",
+                        "inverse-primary": "#ff562c",
+                        "surface-container-highest": "#ffd2cf",
+                        "primary": "#af2700",
+                        "surface-dim": "#ffc7c3",
+                        "error-dim": "#9f0519",
+                        "surface": "#fff4f3",
+                        "primary-container": "#ff7856",
+                        "on-tertiary": "#fff0e6",
+                        "on-error-container": "#570008",
+                        "secondary-dim": "#9c1c00",
+                        "outline-variant": "#e09c98",
+                        "primary-dim": "#9a2100",
+                        "tertiary": "#8a4c00",
+                        "on-secondary": "#ffefec",
+                        "on-surface": "#4e211f",
+                        "on-primary-fixed-variant": "#5a0f00",
+                        "tertiary-dim": "#794200",
+                        "surface-container-high": "#ffdad7",
+                        "secondary": "#b22100"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Plus Jakarta Sans"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"]
-            }
-          },
-        },
-      }
+        }
     </script>
 <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
         body { font-family: 'Manrope', sans-serif; background-color: #fff4f3; color: #4e211f; }
-        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .glass-effect { background: rgba(255, 237, 235, 0.7); backdrop-filter: blur(24px); }
-        .kinetic-progress { transition: width 1s ease-in-out; }
+        .headline-font { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-[#fff4f3] dark:bg-[#1a0a09]">
-<nav class="flex justify-between items-center px-6 py-4 w-full max-w-none">
-<div class="flex items-center gap-8">
-<span class="text-2xl font-bold tracking-tighter text-[#4e211f] dark:text-[#ffedeb]">Kolektif Lüks</span>
-<div class="hidden md:flex gap-6">
-<a class="text-[#af2700] font-bold border-b-2 border-[#af2700] font-headline text-lg" href="#">Keşfet</a>
-<a class="text-[#4e211f]/60 hover:text-[#af2700] transition-colors duration-200 font-headline text-lg" href="#">En Çok Satanlar</a>
-</div>
-</div>
-<div class="flex-1 max-w-md mx-8 hidden lg:block">
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
-<input class="w-full bg-surface-container-low border-none rounded-full py-2 pl-10 focus:ring-2 focus:ring-primary" placeholder="Ürün veya grup ara..." type="text"/>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-[#af2700] p-2 hover:bg-surface-container rounded-full transition-all">notifications</button>
-<button class="material-symbols-outlined text-[#af2700] p-2 hover:bg-surface-container rounded-full transition-all">shopping_bag</button>
-</div>
+<header class="bg-[#fff4f3] sticky top-0 z-50 shadow-[0_12px_40px_rgba(78,33,31,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#af2700] uppercase headline-font">Kolektif Lüks</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#af2700] font-bold border-b-2 border-[#af2700] pb-1 headline-font" href="#">Teknoloji</a>
+<a class="text-[#4e211f] opacity-70 hover:opacity-100 transition-opacity headline-font" href="#">Ev &amp; Yaşam</a>
+<a class="text-[#4e211f] opacity-70 hover:opacity-100 transition-opacity headline-font" href="#">Kişisel Bakım</a>
+<a class="text-[#4e211f] opacity-70 hover:opacity-100 transition-opacity headline-font" href="#">Moda</a>
 </nav>
-</header>
-<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto">
-<!-- Hero Section -->
-<section class="mb-12 relative overflow-hidden rounded-3xl bg-surface-container-low min-h-[400px] flex items-center">
-<div class="absolute inset-0 z-0">
-<img alt="luxury minimal product staging" class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpJQP9Bts3OcL2em4HogiRVCxkF9WLlTtddO8jUq2FvWCWiF-OlWZFi1fVVHuXyEF1dcpqRrYOzdeifZkYKBUTDU156co82JFDzRKhL_zIAjrAM0MhqWIQgtt7og5yqW3iOtwphlTNLqWJPMyXTTTgvOVyeqNDjdrDzuQri0D3rzwtDkw6Xn3maOd5Kpg55FNhxlRw64ekBHG3QKS7OvnLXStxu_a6Hwbajk3UNRjrWlvWf1L3T9zW591oqgTaYKP55TDnFGnk_-0"/>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<input class="bg-surface-container-low border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary w-64 transition-all" placeholder="Ürün ara..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span>
 </div>
-<div class="relative z-10 px-8 md:px-16 w-full lg:w-1/2">
-<span class="inline-block bg-primary text-on-primary px-4 py-1 rounded-full text-sm font-bold mb-4 animate-pulse">🔥 FIRSAT ALARMI</span>
-<h1 class="text-4xl md:text-6xl font-headline font-extrabold leading-tight mb-4 text-on-surface">3 KİŞİ OLURSA FİYAT DÜŞÜYOR 🔥</h1>
-<p class="text-xl md:text-2xl text-on-surface-variant mb-8 font-body">Arkadaşlarınla birlikte al, hayalindeki lükse daha ucuza sahip ol.</p>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-[0_12px_40_px_rgba(175,39,0,0.25)] transition-all active:scale-95">HEMEN KATIL</button>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">shopping_bag</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm hover:brightness-110 active:scale-95 transition-all">Giriş Yap</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-8">
+<!-- Hero Section -->
+<section class="mt-8 mb-16 relative overflow-hidden rounded-[2rem] bg-surface-container-low min-h-[500px] flex items-center">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-20 mix-blend-multiply" data-alt="Modern minimalist luxury interior with clean lines, soft natural lighting and designer furniture in neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLfczrOwFrnrhO0KfUNtzmeIw6JK2Bqt2a4lxweSKHbqaqKwFT_7he7ZVj9mndZjnHaOTgQKV9KB_Wyt4IXirUxiePs-Xkq9FKT-5RvEPnYvOGjldBxkkgcY2DrM9iqL8LxDGsqse821JLAF-PwGRScfXC3CM-E9OFyPtPit4tmgERRQ_iLeqGHXeEXYy3NpLBJTyE1ZTo2Nor4ozoDfVyv47H8NiH6G3CkrQi8c7MkwO_NcWE3JukIJVyP_JlSDkOOQvPgUMBA2c"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low via-surface-container-low/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 md:px-20 max-w-2xl">
+<div class="inline-block bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6">KOLEKTİF FIRSAT</div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight headline-font leading-[1.1] mb-6">
+                    3 KİŞİ OLURSA <br/> <span class="text-primary italic">FİYAT DÜŞÜYOR 🔥</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-10 font-medium leading-relaxed">
+                    Arkadaşlarınla birlikte al, hayalindeki lükse daha ucuza sahip ol. Limitli stok, sınırsız prestij.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-primary/20 active:scale-95 transition-all">HEMEN KATIL</button>
+<button class="bg-white/50 backdrop-blur-md border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all">Keşfet</button>
+</div>
+</div>
+<!-- Floating Hero Element -->
+<div class="hidden lg:block absolute right-20 top-1/2 -translate-y-1/2 scale-125">
+<div class="relative w-80 h-80 bg-surface-container-lowest rounded-full shadow-2xl flex items-center justify-center p-8">
+<img alt="" class="w-full h-auto drop-shadow-2xl rotate-12" data-alt="Premium sleek over-ear headphones with metallic finish on a clean white background studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChVdL7LUHMzgqBRuYl4DQnna9n2VAHLbMLsYlitxAbaJiU72adeYSskACWCGDxeN-zGxNZGzuD_xzKsu-HUkqJcl19VmOQd_1VABTOLwwMH0iJ4SldZWPe7MjcyveQvjxk58_4kycFeaxZFETyac7MagIwaBZtTlrB2tQwqby9MAJOl7Y5clfAV64cmru6za5_vmANXMOz0v075Sc6C9Z1GYPHfUNeZm9fcBLqKmKWe69Dy_e5tPH5NihLK-SAwnIe36wzas4KRhU"/>
+<div class="absolute -bottom-4 -left-4 bg-tertiary text-on-tertiary p-4 rounded-2xl shadow-xl animate-bounce">
+<span class="block font-bold text-2xl">%40</span>
+<span class="text-[10px] uppercase tracking-tighter">İndirim Şansı</span>
+</div>
+</div>
 </div>
 </section>
 <!-- Product Grid Header -->
-<div class="flex justify-between items-end mb-8">
+<div class="flex justify-between items-end mb-10">
 <div>
-<h2 class="text-3xl font-headline font-bold">Çok Satanlar</h2>
-<p class="text-on-surface-variant">Şu an en çok talep gören grup alımları</p>
+<h2 class="text-3xl font-bold headline-font mb-2">Popüler Talepler</h2>
+<p class="text-on-surface-variant">Tamamlanmak üzere olan gruplara katıl, avantajı yakala.</p>
 </div>
-<a class="text-primary font-bold flex items-center gap-1 hover:underline" href="#">Tümünü Gör <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-<!-- Bento Grid Products -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Product 1: AirPods -->
-<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="1" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuC4jmTspd5oFVc2SUXCB4uKGMLAcWjHdNKN2Gff4mEqmIisfWRIVzA-R0hYEPKea87LoHp7SGwxx_yvg5VgEswpL3KwTfPxdaXBk7esQJ319zY1mwFwO0qgWqJtUoxXmT7AcKCLX7mNDxuRbGuA5XxRRzVDcKba-SpsaJxqZMXRNlIkwH26xYVhNZTsGtjeILhnRXDU_utupoHzrpAEjWSfegJgikyU744xqLz__8ePPkKRVWb2FaSrVPK0V0e9pF4lEx6oGdYK-II" data-name="Apple AirPods Pro 2. Nesil" data-old-price="7.500 TL" data-participants="2" data-price="6.200 TL" data-tier1-label="2 Kişi" data-tier1-price="7.000 TL" data-tier2-label="3 Kişi (TAM)" data-tier2-price="6.200 TL" data-time="04:22:15" data-total="3" data-urgency="Sadece 1 kişi daha katılırsa fiyat düşecek!">
-<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4jmTspd5oFVc2SUXCB4uKGMLAcWjHdNKN2Gff4mEqmIisfWRIVzA-R0hYEPKea87LoHp7SGwxx_yvg5VgEswpL3KwTfPxdaXBk7esQJ319zY1mwFwO0qgWqJtUoxXmT7AcKCLX7mNDxuRbGuA5XxRRzVDcKba-SpsaJxqZMXRNlIkwH26xYVhNZTsGtjeILhnRXDU_utupoHzrpAEjWSfegJgikyU744xqLz__8ePPkKRVWb2FaSrVPK0V0e9pF4lEx6oGdYK-II"/>
-<div class="absolute top-3 left-3 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary">SON 1 KİŞİ</div>
-</div>
-<div class="space-y-3">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-semibold text-lg leading-tight">Apple AirPods Pro 2. Nesil</h3>
-<div class="text-right">
-<span class="block text-sm text-on-surface-variant line-through">7.500 TL</span>
-<span class="block text-xl font-bold text-primary">6.200 TL</span>
+<div class="flex gap-2">
+<button class="p-3 rounded-full bg-surface-container-high hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-3 rounded-full bg-surface-container-high hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
 </div>
 </div>
-<div class="space-y-1">
-<div class="flex justify-between text-xs font-bold text-on-surface-variant">
-<span>Katılımcı: 2/3</span>
-<span>%66 Tamamlandı</span>
+<!-- Bento-style Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1: Apple AirPods Pro 2 -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Apple AirPods Pro 2 in their charging case, clean studio lighting on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATya33ngv6MjCfH7LTzwDjXCog0DMlOWT2hwF5Q5egWTafj_6Dec-UowFhVqL6lSwqF2TKwmMVaCE-5L9_qFI3RDB0hShPyCWmNsYErgZBzMkmwBc7mh-I9-VJpn8FmZBlz13nrtv1jQ3SFh3I7MCB7872SkbWiBNku1gThZe1Wi27HL_tncLPDKvMUdXOVb0aWdwLyBrOC4OF_8u4j2IZOTWDOveNWyN_pDJqVLA65Px-SRbx94aKionTZqlCmCuSnutwQXYg8Io"/>
+<div class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-3 py-1 rounded-full">AZ KALDI</div>
 </div>
-<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary kinetic-progress" style="width: 66%"></div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Apple AirPods Pro 2</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">9.499 TL</span>
+<span class="text-primary font-extrabold text-2xl">7.299 TL</span>
 </div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>2/3</span>
 </div>
-<div class="flex items-center gap-2 py-2">
-<span class="material-symbols-outlined text-sm text-tertiary">schedule</span>
-<span class="text-xs font-bold text-tertiary">Kalan Süre: 04:22:15</span>
-</div>
-<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-sm tracking-wide uppercase group-hover:shadow-lg transition-all">FİYATI DÜŞÜR</button>
-</div>
-</div>
-<!-- Product 2: Stanley -->
-<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="2" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBQK5pfOk4CQjdQEYUfbTov0siqi8nNnnQrMJLLKOyAeetcItTiGdk7BmcG5Qz1bRukL-H36tCMSr47K8lMHV3tomsOHYLFdIbHBo1GndL5Dp6VjHKz8Z56kg6zk8fJwqeaAtrIP9XPp3Ipbpn0945IXKc1YcFCxUo6AI2VoircezXHcL9fc1jTyIXXLJKKjZfQW3uAnWr6KLWKQWxkjHLYNIuDyX8-VojRDPLPVV7Hhl2trpFAGyfzruAqcic3VXl9SMdE5nlveyc" data-name="Stanley Quencher 1.18L" data-old-price="2.400 TL" data-participants="5" data-price="1.850 TL" data-tier1-label="5 Kişi" data-tier1-price="2.100 TL" data-tier2-label="10 Kişi (TAM)" data-tier2-price="1.850 TL" data-time="12:05:40" data-total="10" data-urgency="5 kişi daha katılırsa en düşük fiyat aktif olacak!">
-<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQK5pfOk4CQjdQEYUfbTov0siqi8nNnnQrMJLLKOyAeetcItTiGdk7BmcG5Qz1bRukL-H36tCMSr47K8lMHV3tomsOHYLFdIbHBo1GndL5Dp6VjHKz8Z56kg6zk8fJwqeaAtrIP9XPp3Ipbpn0945IXKc1YcFCxUo6AI2VoircezXHcL9fc1jTyIXXLJKKjZfQW3uAnWr6KLWKQWxkjHLYNIuDyX8-VojRDPLPVV7Hhl2trpFAGyfzruAqcic3VXl9SMdE5nlveyc"/>
-</div>
-<div class="space-y-3">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-semibold text-lg leading-tight">Stanley Quencher 1.18L</h3>
-<div class="text-right">
-<span class="block text-sm text-on-surface-variant line-through">2.400 TL</span>
-<span class="block text-xl font-bold text-primary">1.850 TL</span>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[66%]" style="box-shadow: 0 0 10px rgba(175,39,0,0.3)"></div>
 </div>
 </div>
-<div class="space-y-1">
-<div class="flex justify-between text-xs font-bold text-on-surface-variant">
-<span>Katılımcı: 5/10</span>
-<span>%50 Tamamlandı</span>
-</div>
-<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary kinetic-progress" style="width: 50%"></div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>04s : 12dk : 55sn kaldı</span>
 </div>
 </div>
-<div class="flex items-center gap-2 py-2">
-<span class="material-symbols-outlined text-sm text-tertiary">schedule</span>
-<span class="text-xs font-bold text-tertiary">Kalan Süre: 12:05:40</span>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
 </div>
-<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-sm tracking-wide uppercase transition-all">FİYATI DÜŞÜR</button>
+<!-- Card 2: Stanley Quencher -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Stanley Quencher H2.0 FlowState Tumbler in cream color, minimalist lifestyle shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkWLJ0s7jrydki_qVLEcARPrZ3Q8TO3n4PqkiTuNOk7eLkermPO6uylq6V-H_eJam_DNMKE_ASEuycJA8ybR4Oy5FUoLguhOPY7BeKG-WSVoiatka7u6i3HW8Ib_UieEIp4xpGUFprnaY1t2_81QKL15Zh4COqzueqXayCHLE9QUT-Bq8nLVc29Lu3oSSsfnMIR3yn-tKbkoaF96sefBaG3l1wsG-5rc-rGFB_tub8rfpSjcuPPun76EQubFqolyCXAeLXhPl8aCk"/>
 </div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Stanley Quencher 1.18L</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">2.499 TL</span>
+<span class="text-primary font-extrabold text-2xl">1.899 TL</span>
 </div>
-<!-- Product 3: Dyson -->
-<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="3" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuB5tWB4ITajCZ8-7ylI8_XdCgfRKnlOLUxbVV4hh8RivKFeXr5sTjfD3xpgWdoVYJp-kPWcbrQ3UdslhNuz29TppV7HpjfPRPZT-G8EKJfizUhYERGvBULPhGP_3F0bTrlwNOqPfEKVrgwjGd4y5CTMKZTzoXNFGAYLxoioUTEVSROW78yoJvtiYSCdzhZZzMEx4XgpOsELiRLlz6Kn7ZvK2-6QKdX-gixZBRGexoQ7JbM510XULL7bP1L0xdli6IXsAWIocNXvpOA" data-name="Dyson Airwrap Multi-Styler" data-old-price="19.500 TL" data-participants="1" data-price="16.900 TL" data-tier1-label="2 Kişi" data-tier1-price="17.900 TL" data-tier2-label="3 Kişi (TAM)" data-tier2-price="16.900 TL" data-time="23:59:59" data-total="3" data-urgency="Bu özel seriyi kaçırmamak için ilk adımı sen at!">
-<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5tWB4ITajCZ8-7ylI8_XdCgfRKnlOLUxbVV4hh8RivKFeXr5sTjfD3xpgWdoVYJp-kPWcbrQ3UdslhNuz29TppV7HpjfPRPZT-G8EKJfizUhYERGvBULPhGP_3F0bTrlwNOqPfEKVrgwjGd4y5CTMKZTzoXNFGAYLxoioUTEVSROW78yoJvtiYSCdzhZZzMEx4XgpOsELiRLlz6Kn7ZvK2-6QKdX-gixZBRGexoQ7JbM510XULL7bP1L0xdli6IXsAWIocNXvpOA"/>
-<div class="absolute top-3 right-3 bg-tertiary text-white px-3 py-1 rounded-full text-xs font-bold">ÖZEL SERİ</div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>1/3</span>
 </div>
-<div class="space-y-3">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-semibold text-lg leading-tight">Dyson Airwrap Multi-Styler</h3>
-<div class="text-right">
-<span class="block text-sm text-on-surface-variant line-through">19.500 TL</span>
-<span class="block text-xl font-bold text-primary">16.900 TL</span>
-</div>
-</div>
-<div class="space-y-1">
-<div class="flex justify-between text-xs font-bold text-on-surface-variant">
-<span>Katılımcı: 1/3</span>
-<span>%33 Tamamlandı</span>
-</div>
-<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary kinetic-progress" style="width: 33%"></div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[33%]"></div>
 </div>
 </div>
-<div class="flex items-center gap-2 py-2">
-<span class="material-symbols-outlined text-sm text-tertiary">schedule</span>
-<span class="text-xs font-bold text-tertiary">Kalan Süre: 23:59:59</span>
-</div>
-<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-sm tracking-wide uppercase transition-all">FİYATI DÜŞÜR</button>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>18s : 45dk : 20sn kaldı</span>
 </div>
 </div>
-<!-- Product 4: Instax -->
-<div class="product-card group bg-surface-container-lowest p-5 rounded-[2rem] shadow-[12px_0_40px_rgba(78,33,31,0.04)] hover:shadow-[12px_12px_50px_rgba(78,33,31,0.1)] transition-all cursor-pointer" data-id="4" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuCffn7yi9pJJ68rY6WhgWyPEhwsY7g7DwdHNPZScOhyDb2_bqIWybMqNEy5mHfAfMYjvWYNAXTKrA7VIzTcN07hgjtS1hrK0-nnV2Qkd08ujxxFydkVMF9HXJsJvXpaVO0UL6u55Rb4xGSuw40gtyVTall9EnTvezRy-3Kor7g0LlvJyJgxxkVJyOogTL8vo7m5eyZRmVA8eNTq_nrQtr6D4a2d8STO-Ch6-HIPwRh-I-EVscIPSxB2fGRNi-5XXGoPKzRmeqDB8ik" data-name="Fujifilm Instax Mini 12" data-old-price="4.200 TL" data-participants="4" data-price="3.100 TL" data-tier1-label="3 Kişi" data-tier1-price="3.500 TL" data-tier2-label="5 Kişi (TAM)" data-tier2-price="3.100 TL" data-time="01:15:30" data-total="5" data-urgency="Sadece 1 kişi daha katılırsa grup tamamlanıyor!">
-<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffn7yi9pJJ68rY6WhgWyPEhwsY7g7DwdHNPZScOhyDb2_bqIWybMqNEy5mHfAfMYjvWYNAXTKrA7VIzTcN07hgjtS1hrK0-nnV2Qkd08ujxxFydkVMF9HXJsJvXpaVO0UL6u55Rb4xGSuw40gtyVTall9EnTvezRy-3Kor7g0LlvJyJgxxkVJyOogTL8vo7m5eyZRmVA8eNTq_nrQtr6D4a2d8STO-Ch6-HIPwRh-I-EVscIPSxB2fGRNi-5XXGoPKzRmeqDB8ik"/>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
 </div>
-<div class="space-y-3">
-<div class="flex justify-between items-start">
-<h3 class="font-headline font-semibold text-lg leading-tight">Fujifilm Instax Mini 12</h3>
-<div class="text-right">
-<span class="block text-sm text-on-surface-variant line-through">4.200 TL</span>
-<span class="block text-xl font-bold text-primary">3.100 TL</span>
+<!-- Card 3: Dyson Airwrap -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Dyson Airwrap multi-styler in nickel and copper finish, high-end beauty tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_7SZK3AQsfm46M4YAhTGYo3KE1C2B57xO9BC7vXjj5Ei_j97wYtXkgjMF9Rzba4yPdn8QW5SuC1P-weECSoi_pqiIzO8q8dgjyUtTQ1oJBG2R7b8HJI4yfgDXcJbYvG9-P3HwKB5n2yF_Pr81SpP9fVEWLlX8szF3XoIXE6IuiV0Er2UuSatWwzVoHyo8gyf5tE3Q-afzOl0PLjdnAMmOvhNbsLExR84ZHCD-40q09dpdRpF6GNb6Y7DqkiqRMLghAkfMCqlkxeM"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary text-[10px] font-bold px-3 py-1 rounded-full">PREMIUM</div>
 </div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Dyson Airwrap Complete</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">21.999 TL</span>
+<span class="text-primary font-extrabold text-2xl">18.499 TL</span>
 </div>
-<div class="space-y-1">
-<div class="flex justify-between text-xs font-bold text-on-surface-variant">
-<span>Katılımcı: 4/5</span>
-<span>%80 Tamamlandı</span>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>2/3</span>
 </div>
-<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary kinetic-progress" style="width: 80%"></div>
-</div>
-</div>
-<div class="flex items-center gap-2 py-2">
-<span class="material-symbols-outlined text-sm text-tertiary">schedule</span>
-<span class="text-xs font-bold text-tertiary">Kalan Süre: 01:15:30</span>
-</div>
-<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-sm tracking-wide uppercase transition-all">FİYATI DÜŞÜR</button>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[66%]"></div>
 </div>
 </div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>01s : 30dk : 12sn kaldı</span>
 </div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
+</div>
+<!-- Card 4: Instax Mini -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Fujifilm Instax Mini 12 camera in soft pink pastel color, playful aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9jkFrxRRzzv6WH3iNxsn0ILJwVKUMs8YlOUlgeKRRxsrQlSFbQTee7bdVfkIoLIhFg7PmXnewYjZ3XRq5_l1wYybVMDu793PEW89mX7VRZF6mgUak1OBFzpFTOpcim3L2J7rfvLD53Yg2YjMbnf9Ehw_hWe9yxI5ZqH-g1LvGyJ6lYFXyLJR6EFrU30P6wYvGNEungkXwkQ-GFU9Loi9-KXGilzU9I5PPjh4xpaOn3Le-gl7B1AKAhbodcC4l1o98MduSm2jHPc"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Instax Mini 12</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">3.199 TL</span>
+<span class="text-primary font-extrabold text-2xl">2.450 TL</span>
+</div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>0/3</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-0"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>02g : 14s : 05dk kaldı</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
+</div>
+<!-- Repeat for 8 products... (Adding more unique items) -->
+<!-- Card 5: Nespresso Vertuo -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Nespresso Vertuo coffee machine on a kitchen counter, elegant matte black finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYHol-80SpMF21hZOBBn8lTkS20qQ9HxMum5O7Wsk7gulEY_Ac5TVOb-1UFLPyKZgE3PXbzdF6yhRfZUwQ11NaLKd8QKhMnulai9cUO9DQ4WnS0BCRd7pK_tvWIgn0P6oG-Y39fn1qRKjwpIwG5JPYrPexeU4nc6XxdxGHhabfYAIdVmbrharbyhLZLAQIZszxXaHYHUvjCfNYDSqny4vwaFNrs2CNFf7bUX_6SHWxlYI7vSG0TAyQ8Z3TxrxjQUWnwEqRM9hE3-M"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Nespresso Vertuo Pop</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">5.999 TL</span>
+<span class="text-primary font-extrabold text-2xl">4.200 TL</span>
+</div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>2/3</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[66%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>05s : 22dk : 10sn kaldı</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
+</div>
+<!-- Card 6: Kindle Paperwhite -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Amazon Kindle Paperwhite on a wooden table, cozy reading vibes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj4Z-mP6p38KiO4IJVwFbe5-byCeg4G1jCAHuNFV_cf44BW_cPyeYxpSdH2TYmWBVUOJ086VW5aEycbIGiHYXne3RhFYGFMvUx4gtdPMhseh1Rd6qjfpBzlVv-nSlrKHRIXJPKOOqJ5EIJOWs7Ekzg9EOYLjRnkErnclsOlxxj3U0EIdAXnxdC7TSreVUEg7dbyf_RDmuB94QhscPR2U392OalAgURwYmxYtoDlec_1vfaOcM7P-eGzO8hsDPCznFpot-Mqwv5iCg"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Kindle Paperwhite 5</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">6.199 TL</span>
+<span class="text-primary font-extrabold text-2xl">4.999 TL</span>
+</div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>1/3</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[33%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>12s : 08dk : 30sn kaldı</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
+</div>
+<!-- Card 7: Foreo Luna 4 -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Foreo Luna skincare device in lavender, high-end skincare tech on clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo8J3xUItUcM6PMPsLDSLvI6T5jMtHbJG7etN5dfPYvJjfJxJnXyPHtO1KZLK-RLmxVGSkBpHN1b2asc_KnjSzpG7MFNVr2_tUQTe42tdicYOeNvPYKAbcdFh6pnCls11cLj3QsPmvYvVPagcGuO4FuVcS9MMNMLvb7h9V92xDhLhHYU8fpSbmnVGBI-CDR4H82unLpeJsarxMPdpcy9kESUm0YtmAklIWw7sZWjxvQHKQCobiGp4ftPWfIjbtfwgLjckzJSX_VoI"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Foreo Luna 4 Plus</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">12.500 TL</span>
+<span class="text-primary font-extrabold text-2xl">9.800 TL</span>
+</div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>2/3</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[66%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>03s : 45dk : 15sn kaldı</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
+</div>
+<!-- Card 8: Marshall Emberton -->
+<div class="group bg-surface-container-low rounded-[2rem] p-6 flex flex-col transition-all hover:translate-y-[-8px] hover:shadow-[0_20px_50px_rgba(78,33,31,0.12)]">
+<div class="relative mb-6 aspect-square bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+<img alt="" class="w-3/4 h-auto object-contain group-hover:scale-110 transition-transform duration-500" data-alt="Marshall Emberton bluetooth speaker with iconic black textured finish and gold logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrCxagtF2Jc9SCENKdR9NkJGI_LCSt6lFJ8IjbLkZ-9yNCY9gbQ0uRXiLeLALKZBE4Mcr_hjGiti96CFrsFHfjlq4uIOUAvLXFZHgXSf3Mw1FiUWkxToNm36ssIGJoTrvqLgGmL5tQm0mpdwjsPu-_ibtClLdIw6RQW8BUo8G6D_6cOiSwfbmvqLNNEyiZ3sm8ZbBd2yV5QmfksJB7gt-fjyXVm5jjjkqkOjwb-ZSvWeGizCF9FOtp4UKa8j19S1OThCeH-Wfp3bg"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-bold text-lg mb-1 headline-font">Marshall Emberton II</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-on-surface-variant line-through text-sm">7.499 TL</span>
+<span class="text-primary font-extrabold text-2xl">5.850 TL</span>
+</div>
+<div class="bg-surface-container-highest/50 p-4 rounded-2xl mb-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-primary">
+<span>3 Kişi Olursa</span>
+<span>1/3</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[33%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>22s : 10dk : 00sn kaldı</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest text-sm active:scale-95 transition-all">FİYATI DÜŞÜR</button>
+</div>
+</div>
+<!-- Trust Markers Banner -->
+<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 py-12 px-8 bg-surface-container-low rounded-[3rem]">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mb-4 shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h4 class="font-bold headline-font mb-2">Güvenli Ödeme</h4>
+<p class="text-sm text-on-surface-variant">SSL Encrypted 256-bit koruma ile ödemeleriniz güvende.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mb-4 shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">info</span>
+</div>
+<h4 class="font-bold headline-font mb-2">Ön Talep Bilgilendirmesi</h4>
+<p class="text-sm text-on-surface-variant">Grup tamamlanmadığında ödemeniz anında iade edilir.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mb-4 shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<h4 class="font-bold headline-font mb-2">Teslimat Koşulları</h4>
+<p class="text-sm text-on-surface-variant">Grup tamamlandıktan sonra 48 saat içinde kargoda.</p>
+</div>
+</section>
 </main>
-<!-- Floating Info -->
-<div class="fixed bottom-24 left-6 z-40">
-<div class="bg-surface-container-lowest/90 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-outline-variant/10 flex items-center gap-3 animate-bounce">
-<div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">person</span>
-</div>
+<!-- Footer -->
+<footer class="bg-[#ffedeb] full-width py-12 px-8 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
 <div>
-<p class="text-xs font-bold">Ahmet az önce katıldı</p>
-<p class="text-[10px] text-on-surface-variant">AirPods Pro 2 Grubu • 2sn önce</p>
-</div>
-</div>
-<div class="mt-3 bg-tertiary/10 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-tertiary/20 flex items-center gap-2">
-<span class="w-2 h-2 bg-tertiary rounded-full animate-ping"></span>
-<p class="text-[10px] font-bold text-tertiary">5 kişi şu an inceliyor</p>
-</div>
-</div>
-<!-- Dynamic Product Detail Modal -->
-<div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="product-detail-modal">
-<div class="bg-white w-full max-w-4xl rounded-[2.5rem] overflow-hidden relative shadow-2xl animate-in fade-in zoom-in duration-300">
-<button class="absolute top-6 right-6 z-10 w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-surface-container transition-all" id="close-modal">
-<span class="material-symbols-outlined">close</span>
-</button>
-<div class="flex flex-col md:flex-row h-full">
-<!-- Image Side -->
-<div class="w-full md:w-1/2 bg-surface-container-low p-8 flex items-center justify-center">
-<img class="w-full h-auto drop-shadow-2xl" id="modal-img" src=""/>
-</div>
-<!-- Content Side -->
-<div class="w-full md:w-1/2 p-8 md:p-12 space-y-8 overflow-y-auto max-h-[921px]">
-<div>
-<span class="text-primary font-bold text-sm uppercase tracking-widest block mb-2">GRUP ALIMI AKTİF</span>
-<h2 class="text-3xl font-headline font-bold text-on-surface" id="modal-title">Ürün Adı</h2>
-<div class="mt-4 flex items-baseline gap-3">
-<span class="text-4xl font-headline font-extrabold text-primary" id="modal-price">0 TL</span>
-<span class="text-lg text-on-surface-variant line-through" id="modal-old-price">0 TL</span>
-</div>
-</div>
-<div class="space-y-3">
-<div class="flex justify-between text-xs font-bold text-on-surface-variant">
-<span id="modal-participants-text">Katılımcı: 0/0</span>
-<span id="modal-progress-text">%0 Tamamlandı</span>
-</div>
-<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary kinetic-progress" id="modal-progress-bar" style="width: 0%"></div>
-</div>
-</div>
-<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/15">
-<h4 class="font-bold mb-4 text-sm uppercase tracking-tight">İndirim Kademeleri</h4>
-<div class="space-y-4">
-<div class="flex justify-between items-center opacity-60">
-<span class="flex items-center gap-2 font-medium" id="modal-tier1-label"><span class="material-symbols-outlined text-primary">check_circle</span> -</span>
-<span class="font-bold" id="modal-tier1-price">-</span>
-</div>
-<div class="flex justify-between items-center bg-primary/5 p-3 rounded-xl border border-primary/20">
-<span class="flex items-center gap-2 font-bold text-primary" id="modal-tier2-label"><span class="material-symbols-outlined">groups</span> -</span>
-<span class="font-extrabold text-primary" id="modal-tier2-price">-</span>
-</div>
-</div>
-</div>
-<div class="flex items-center gap-4 p-4 bg-tertiary-container/10 rounded-xl border-l-4 border-tertiary">
-<span class="material-symbols-outlined text-tertiary">notification_important</span>
-<p class="text-sm font-bold text-on-tertiary-container leading-tight" id="modal-urgency">Mesaj...</p>
-</div>
-<div class="space-y-4">
-<button class="w-full bg-primary text-on-primary py-5 rounded-2xl font-headline font-extrabold text-lg shadow-[0_12px_40px_rgba(175,39,0,0.25)] hover:scale-[1.02] active:scale-95 transition-all">
-                            GRUBA KATIL VE FİYATI DÜŞÜR
-                        </button>
-<p class="text-center text-xs text-on-surface-variant">Hemen katıl, gruptaki yerini ayırt. Para çekimi grup tamamlanınca gerçekleşir.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer class="bg-[#ffedeb] dark:bg-[#150706] w-full py-12 px-8 border-t border-[#e09c98]/15">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
-<div class="col-span-1 md:col-span-1">
-<span class="text-lg font-bold text-[#4e211f] block mb-4">Kolektif Lüks</span>
-<p class="text-[#4e211f]/70 text-sm font-['Manrope']">Lüks tüketimde devrim. Topluluk gücüyle erişilebilir fiyatlar.</p>
-</div>
-<div>
-<h4 class="font-bold mb-4 text-[#af2700]">Kurumsal</h4>
-<div class="flex flex-col gap-2">
-<a class="text-[#4e211f]/70 hover:text-[#af2700] transition-colors text-sm font-['Manrope']" href="#">Güvenli Ödeme</a>
-<a class="text-[#4e211f]/70 hover:text-[#af2700] transition-colors text-sm font-['Manrope']" href="#">Teslimat Koşulları</a>
+<div class="text-lg font-bold text-[#4e211f] mb-6 headline-font uppercase tracking-tighter">Kolektif Lüks</div>
+<p class="text-sm opacity-60 leading-relaxed mb-6">Lüksü ulaşılabilir kılmak için buradayız. Kolektif gücü kullanarak en sevdiğiniz markalara en uygun fiyatlarla sahip olun.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined opacity-60 hover:opacity-100 cursor-pointer transition-opacity">social_leaderboard</span>
+<span class="material-symbols-outlined opacity-60 hover:opacity-100 cursor-pointer transition-opacity">camera_enhance</span>
 </div>
 </div>
 <div>
-<h4 class="font-bold mb-4 text-[#af2700]">Yardım</h4>
-<div class="flex flex-col gap-2">
-<a class="text-[#4e211f]/70 hover:text-[#af2700] transition-colors text-sm font-['Manrope']" href="#">İade Politikası</a>
-<a class="text-[#4e211f]/70 hover:text-[#af2700] transition-colors text-sm font-['Manrope']" href="#">SSS</a>
+<h5 class="font-bold mb-6 headline-font">Kurumsal</h5>
+<ul class="space-y-4">
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Sıkça Sorulan Sorular</a></li>
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Kullanım Koşulları</a></li>
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Gizlilik Politikası</a></li>
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">İletişim</a></li>
+</ul>
 </div>
+<div>
+<h5 class="font-bold mb-6 headline-font">Kategoriler</h5>
+<ul class="space-y-4">
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Teknoloji</a></li>
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Ev &amp; Yaşam</a></li>
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Kişisel Bakım</a></li>
+<li><a class="text-sm opacity-60 hover:text-[#af2700] hover:opacity-100 transition-all" href="#">Moda</a></li>
+</ul>
 </div>
-<div class="flex flex-col gap-4">
-<h4 class="font-bold text-[#af2700]">Bültene Katıl</h4>
+<div>
+<h5 class="font-bold mb-6 headline-font">Bültene Katıl</h5>
+<p class="text-sm opacity-60 mb-4">Yeni açılan gruplardan ilk sen haberdar ol.</p>
 <div class="flex">
-<input class="bg-white/50 border-none rounded-l-lg py-2 px-4 focus:ring-1 focus:ring-primary w-full" placeholder="E-posta adresi" type="email"/>
-<button class="bg-primary text-on-primary px-4 rounded-r-lg">
-<span class="material-symbols-outlined">send</span>
+<input class="bg-white/50 border-none rounded-l-xl px-4 py-3 text-sm focus:ring-0 w-full" placeholder="E-posta" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-3 rounded-r-xl">
+<span class="material-symbols-outlined text-sm">send</span>
 </button>
 </div>
-<p class="text-[10px] text-on-surface-variant">© 2024 Kolektif Lüks. Tüm Hakları Saklıdır.</p>
 </div>
 </div>
+<div class="mt-16 pt-8 border-t border-outline-variant/10 text-center text-xs opacity-40">
+            © 2024 Kolektif Lüks. Güvenli Ödeme (SSL Encypted). Ön Talep Bilgilendirmesi.
+        </div>
 </footer>
-<!-- SideNavBar (Mobile Bottom) -->
-<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-[#fff4f3] border-t border-[#e09c98]/15 z-50 px-6 py-3 flex justify-between items-center">
-<a class="flex flex-col items-center gap-1 text-[#af2700]" href="#">
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-[#fff4f3]/90 backdrop-blur-xl flex justify-around items-center px-4 pb-safe pt-2 border-t border-[#e09c98]/15 z-50">
+<div class="flex flex-col items-center justify-center text-[#af2700] scale-110">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
-<span class="text-[10px] font-bold">Keşfet</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
-<span class="material-symbols-outlined">trending_up</span>
-<span class="text-[10px] font-bold">Trendler</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
-<span class="material-symbols-outlined">group</span>
-<span class="text-[10px] font-bold">Gruplarım</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Keşfet</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e211f] opacity-50">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Kategoriler</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e211f] opacity-50">
+<span class="material-symbols-outlined">group_work</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Gruplarım</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e211f] opacity-50">
 <span class="material-symbols-outlined">person</span>
-<span class="text-[10px] font-bold">Profil</span>
-</a>
-</nav>
-<script>
-  const modal = document.getElementById('product-detail-modal');
-  const closeModalBtn = document.getElementById('close-modal');
-
-  // Modal Elements
-  const mTitle = document.getElementById('modal-title');
-  const mImg = document.getElementById('modal-img');
-  const mPrice = document.getElementById('modal-price');
-  const mOldPrice = document.getElementById('modal-old-price');
-  const mPartText = document.getElementById('modal-participants-text');
-  const mProgText = document.getElementById('modal-progress-text');
-  const mProgBar = document.getElementById('modal-progress-bar');
-  const mTier1L = document.getElementById('modal-tier1-label');
-  const mTier1P = document.getElementById('modal-tier1-price');
-  const mTier2L = document.getElementById('modal-tier2-label');
-  const mTier2P = document.getElementById('modal-tier2-price');
-  const mUrgency = document.getElementById('modal-urgency');
-
-  document.querySelectorAll('.product-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const d = card.dataset;
-      
-      mTitle.textContent = d.name;
-      mImg.src = d.img;
-      mPrice.textContent = d.price;
-      mOldPrice.textContent = d.oldPrice;
-      
-      const p = parseInt(d.participants);
-      const t = parseInt(d.total);
-      const percent = Math.round((p / t) * 100);
-      
-      mPartText.textContent = `Katılımcı: ${p}/${t}`;
-      mProgText.textContent = `%${percent} Tamamlandı`;
-      mProgBar.style.width = `${percent}%`;
-      
-      mTier1L.innerHTML = `<span class="material-symbols-outlined text-primary">check_circle</span> ${d.tier1Label}`;
-      mTier1P.textContent = d.tier1Price;
-      
-      mTier2L.innerHTML = `<span class="material-symbols-outlined">groups</span> ${d.tier2Label}`;
-      mTier2P.textContent = d.tier2Price;
-      
-      mUrgency.textContent = d.urgency;
-
-      modal.classList.remove('hidden');
-    });
-  });
-
-  closeModalBtn.addEventListener('click', () => {
-    modal.classList.add('hidden');
-  });
-
-  modal.addEventListener('click', function(e) {
-    if (e.target === this) {
-      this.classList.add('hidden');
-    }
-  });
-</script>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Profil</span>
+</div>
+</div>
 </body></html>
